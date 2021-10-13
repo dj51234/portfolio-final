@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>::backdrop - CSS Selector</title>
+    <link rel="stylesheet" href="dest/styles/main.css" />
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">::backdrop</h1>
+            <div class="content">
+                <p>The ::backdrop CSS pseudo-element creates a backdrop that covers the entire viewport and is rendered
+                    immediately below a dialog or any element that enters fullscreen mode using the Fullscreen API.
+                </p>
+                <button class="button" onclick="openDialog();">Click Here</button>
+            </div>
+        </div>
+        <dialog>
+            <h2>Open dialog window Title</h2>
+            <p>Can you see my backdrop?</p>
+            <button class="button" onclick="closeDialog()">Close</button>
+        </dialog>
+    </section>
+    <script type="text/javascript" src="dest/script/script.js" ></script>
+</body>
+
+</html>

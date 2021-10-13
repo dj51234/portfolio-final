@@ -1,0 +1,21 @@
+{
+  "name": "code-canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server 'app' --files 'app'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.5",
+    "bulma": "^0.9.3",
+    "gulp": "^4.0.2",
+    "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.0.0"
+  }
+}
