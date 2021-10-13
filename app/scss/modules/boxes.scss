@@ -42,6 +42,22 @@
       &--lightblue {
         border-top: 3px solid #1192C7;
       }
+
+      &--pyblue {
+        border-top: 3px solid #3774A8;
+      }
+
+      &--vuegreen {
+        border-top: 3px solid #3EAF7C;
+        font-size: 1rem !important;
+        
+        * {
+          width: 45px;
+          height: 45px
+        }
+      }
+
+      
   
       @include small {
         font-size: 2rem;

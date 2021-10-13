@@ -1071,6 +1071,17 @@ a[data-content="6"] {
 .boxes__link--lightblue {
   border-top: 3px solid #1192C7;
 }
+.boxes__link--pyblue {
+  border-top: 3px solid #3774A8;
+}
+.boxes__link--vuegreen {
+  border-top: 3px solid #3EAF7C;
+  font-size: 1rem !important;
+}
+.boxes__link--vuegreen * {
+  width: 45px;
+  height: 45px;
+}
 @media (min-width: 650px) {
   .boxes__link {
     font-size: 2rem;
@@ -1132,6 +1143,12 @@ footer p {
 }
 .ion-social-javascript {
   color: #F0DB4F;
+}
+.ion-social-python {
+  color: #3774A8;
+}
+.ion-social-vue {
+  color: #3EAF7C;
 }
 .ion-social-nodejs {
   color: #6AA568;
