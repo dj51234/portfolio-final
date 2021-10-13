@@ -1,0 +1,34 @@
+.flex-column {
+    display: flex;
+  
+    @include medium {
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+  
+  .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .flex-narrow {
+    display: block;
+    margin: 0 auto;
+  
+    @include medium {
+      display: flex;
+      max-width: 976px;
+      margin: 0 auto;
+      align-items: center;
+    }
+  }
+  
+  .flex-full-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }

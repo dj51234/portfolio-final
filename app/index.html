@@ -4,27 +4,212 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>::backdrop - CSS Selector</title>
+    <title>Derrick Johnson - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="dest/styles/main.css" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dest/script/jquery-smooth-scroll.js" ></script>
 </head>
 
 <body>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">::backdrop</h1>
-            <div class="content">
-                <p>The ::backdrop CSS pseudo-element creates a backdrop that covers the entire viewport and is rendered
-                    immediately below a dialog or any element that enters fullscreen mode using the Fullscreen API.
-                </p>
-                <button class="button" onclick="openDialog();">Click Here</button>
-            </div>
+    <!-- Desktop Header -->
+    <header class="header">
+        <div class="nav-wrapper">
+          <div class="flex-column">
+            <div class="header__logo"><h2 class="header__logo-text">DJ</h2></div>
+            <ul class="header__nav">
+              <li><a class="header__nav-link" href="#bio">Bio</a></li>
+              <li><a class="header__nav-link" href="#portfolio">Portfolio</a></li>
+              <li><a target="_blank" class="header__nav-link"href="assets/images/resume-djohnson-min.pdf" download>Resume</a></li>
+              <li><a class="header__nav-link" href="#social">Contact</a></li>
+              <li><a class="header__nav-link header__nav-link--email" href="mailto:dj51234@yahoo.com">Email Me</a></li>
+            </ul>
+          </div>
         </div>
-        <dialog>
-            <h2>Open dialog window Title</h2>
-            <p>Can you see my backdrop?</p>
-            <button class="button" onclick="closeDialog()">Close</button>
-        </dialog>
-    </section>
+      </header>
+    
+      <!-- Mobile Header -->
+      <div class="mobile-header">
+        <div class="mobile-nav-wrapper flex-row">
+          <div class="mobile-header__logo"><h2 class="mobile-header__logo-text">DJ</h2></div>
+          <div class="mobile-header__menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="mobile-header__links">
+          <ul>
+            <li><a class="mobile-header__link" href="#bio">Bio</a></li>
+            <li><a class="mobile-header__link" href="#portfolio">Portfolio</a></li>
+            <li><a target="_blank" class="mobile-header__link" href="assets/images/resume-djohnson-min.pdf" download>Resume</a></li>
+            <li><a class="mobile-header__link" href="#social">Contact</a></li>
+            <li><a class="mobile-header__link" href="mailto:dj51234@yahoo.com">Email Me</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <!-- Top Hero Section -->
+      <div id="hero" class="section section--hero">
+        <div class="section__heading">
+          <h1 class="section__title">Derrick Johnson</h1>
+          <h2 class="section__subtitle">Front End Developer</h2>
+        </div>
+      </div>
+    
+      <!-- Bio Section -->
+      <div id="bio" class="section section--padding">
+        <div>
+          <div class="bio-content">
+            <h2 class="bio-content__title">Hey There, I'm Derrick!</h2>
+            <p class="bio-outer-text">I am a <span>Front End Developer</span> currently residing in Charlotte, NC.  I majored in Criminal Law and Forensics but that doesn't stop me from chasing my true passion which is designing, coding, and web development.  Criminal Law and coding may seem incredibly different but there are quite a few similarities in overall thought process between the two.  Both require incredible attention to detail and the ability to think ahead to plan and organize steps.  When I am coding I feel like I am planning out and "dissecting" the structure of a web app and I believe that main concept is what led me to coding while I was pursuing my degree.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bio-content">
+            <h2 class="bio-content__title bio-content__title--margin">Experience</h2>
+            <p class="bio-outer-text">I have 5 years of experience working with clients in web development but I started off designing websites in Photoshop over 10 years ago.  I am currently experienced in using modern tools such as <span>HTML5</span>, <span>CSS3</span>, <span>Javascript (including ES6)</span>, <span>jQuery</span>, <span>Gulp</span>, <span>Node/npm</span>, <span>Git</span>, <span>Webpack</span>, <span>Babel</span> and am currently embarking on my adventure with <span>React/Redux</span>.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div id="tools" class="section">
+        <div class="boxes boxes--alt">
+          <a href=""class="boxes__link boxes__link--orange">
+            <div class="center">
+              <span class="ion-social-html5"></span>
+            </div>
+          </a>
+          <a href="" class="boxes__link boxes__link--blue">
+            <div class="center">
+              <span class="ion-social-css3"></span>
+            </div>
+          </a>
+          <a href="" class="boxes__link boxes__link--pink">
+            <div class="center">
+              <span class="ion-social-sass"></span>
+            </div>
+          </a>
+          <a href="" class="boxes__link boxes__link--yellow">
+            <div class="center">
+              <span class="ion-social-javascript"></span>
+            </div>
+          </a>
+          <a href="" class="boxes__link boxes__link--green">
+            <div class="center">
+              <span class="ion-social-nodejs"></span>
+            </div>
+          </a>
+          <a href="" class="boxes__link boxes__link--burntorange">
+            <div class="center">
+              <span class="ion-social-github"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      <!-- Portfolio Section -->
+      <div id="portfolio" class="section section--full-width-sm">
+        <div class="portfolio-wrap"> <!-- 200% -->
+          <div class="thumb-wrap">
+            <div class="thumbnail-container">
+              <a href="#portfolio" data-content="1" class="thumbnail-unit">
+                <div class="thumb-overlay">
+                  <span data-content="1">Title</span>
+                </div>
+              </a>
+              <a href="#portfolio" data-content="2" class="thumbnail-unit">
+                <div class="thumb-overlay">
+                  <span data-content="2">Title</span>
+                </div>
+              </a>
+              <a href="#portfolio" data-content="3" class="thumbnail-unit">
+                <div class="thumb-overlay">
+                  <span data-content="3">Title</span>
+                </div>
+              </a>
+              <a href="#portfolio" data-content="4" class="thumbnail-unit">
+                <div class="thumb-overlay">
+                  <span data-content="4">Title</span>
+                </div>
+              </a>
+              <a href="#portfolio" data-content="5" class="thumbnail-unit">
+                <div class="thumb-overlay">
+                <span data-content="5">Title</span>
+                </div>
+              </a>
+              <a href="#portfolio" data-content="6" class="thumbnail-unit">
+                <div class="thumb-overlay">
+                  <span data-content="6">Title</span>
+                </div>
+              </a>
+            </div> <!-- 50% of parent -->
+          </div>
+          <div class="content-wrap">
+            <div class="content-container">
+              <a class="go-back-btn" href="#">
+                <span class="ion-chevron-left"></span><h3 class="go-back-title">Go Back</h3>
+              </a>
+              <div class="content-image"></div>
+              <div class="content-text">
+                <h1 class="content-title">Title</h1>
+                <p class="content-description">
+    
+                </p>
+                <a class="visit" href="#">Visit Site</a>
+                <strong>Tools Used:</strong>
+                <span>(Hover over an icon to see full name of tool)</span>
+                <div class="content-tools">
+    
+                </div>
+              </div>
+            </div> <!-- 50% of parent -->
+          </div>
+        </div>
+      </div>
+    
+      <!-- email -->
+      <div id="email" class="section">
+        <h1><a href="mailto:dj51234@yahoo.com">dj51234@yahoo.com</a></h1>
+      </div>
+    
+      <!-- Social Links -->
+    
+      <div id="social" class="section">
+        <div class="boxes">
+          <a target="_blank" href="https://www.linkedin.com/in/derrick-johnson-ab1b887b/" class="boxes__link">
+            <div class="center">
+              <span>LinkedIn</span>
+              <span class="ion-social-linkedin"></span>
+            </div>
+          </a>
+          <a target="_blank" href="https://github.com/dj51234"class="boxes__link">
+            <div class="center">
+              <span>Github</span>
+              <span class="ion-social-github"></span>
+            </div>
+          </a>
+          <a target="_blank" href="http://codepen.io/dj51234/pens/public/" class="boxes__link">
+            <div class="center">
+              <span>Codepen</span>
+              <span class="ion-social-codepen"></span>
+            </div>
+          </a>
+          <a target="_blank" href="assets/images/resume-djohnson-min.pdf" class="boxes__link">
+            <div class="center">
+              <span>Resume</span>
+              <span class="ion-android-list"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      <!-- footer -->
+      <footer class="section">
+        <p>&copy; Derrick Johnson 2017. All rights reserved.</p>
+      </footer>
+      
     <script type="text/javascript" src="dest/script/script.js" ></script>
 </body>
 

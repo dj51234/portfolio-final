@@ -1,0 +1,11 @@
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/hero-bg.jpg') bottom center;
+    background-size: cover;
+    height: 500px;
+    padding-top: 100px;
+  
+    @include medium {
+      height: 800px;
+      padding-top: 0;
+    }
+  }

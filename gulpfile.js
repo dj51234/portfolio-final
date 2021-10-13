@@ -27,7 +27,7 @@ gulp.task('buildCSS', function () {
 
 gulp.task('scripts', function () {
 
-    return gulp.src("app/scripts/*.js").
+    return gulp.src("app/scripts/**/*.js").
         pipe(gulp.dest("app/dest/script")).
         pipe(browserSync.stream());
 
