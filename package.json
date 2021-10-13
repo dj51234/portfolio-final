@@ -1,5 +1,5 @@
 {
-  "name": "gulp-sass-browsersync",
+  "name": "gulp-browsersync",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

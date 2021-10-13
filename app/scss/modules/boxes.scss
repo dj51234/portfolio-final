@@ -1,0 +1,83 @@
+.boxes {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    // border-top: 1px solid transparentize(#222,.8);
+  
+    &__link {
+      border-right: 1px solid transparentize(#111,.8);
+      border-bottom: 1px solid transparentize(#111,.8);
+      height: 125px;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #111;
+  
+      &--orange {
+        border-top: 3px solid #F16529;
+      }
+  
+      &--blue {
+        border-top: 3px solid #1C88C7;
+      }
+  
+      &--pink {
+        border-top: 3px solid #CD669A;
+      }
+  
+      &--yellow {
+        border-top: 3px solid #F0DB4F;
+      }
+  
+      &--green {
+        border-top: 3px solid #6AA568;
+      }
+  
+      &--burntorange {
+        border-top: 3px solid #F05033;
+      }
+  
+      &--lightblue {
+        border-top: 3px solid #1192C7;
+      }
+  
+      @include small {
+        font-size: 2rem;
+      }
+  
+      @include boxes {
+        width: 25%;
+        height: 150px;
+      }
+  
+      .center {
+        transform: scale(1);
+        transition: all .3s ease-in-out;
+      }
+  
+      &:hover {
+        background: #eeeeee;
+      }
+    }
+  
+     &--alt {
+       .boxes__link {
+         color: #fff;
+         font-size: 3rem;
+         pointer-events: none;
+         width: 33.33%;
+         height: 100px;
+  
+         @include boxes {
+           width: 16.66%;
+         }
+  
+       }
+  
+       &:hover .center {
+         transform: scale(1);
+       }
+     }
+  }

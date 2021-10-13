@@ -1,0 +1,65 @@
+.section {
+    overflow-x: hidden;
+    @include medium {
+      margin-left: 150px;
+    }
+  
+    &__heading {
+      color: white;
+      text-align: center;
+    }
+  
+    &__title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 3rem;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  
+      @include small {
+        font-size: 4rem;
+      }
+  
+      @include large {
+        font-size: 5rem;
+      }
+    }
+  
+    &__subtitle {
+      margin-top: 0;
+      font-weight: 300;
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  
+      @include small {
+        font-size: 2rem;
+      }
+  
+      @include large {
+        font-size: 3rem;
+      }
+    }
+  }
+  
+  .section--padding {
+    padding: 75px 30px;
+  
+    @include large {
+      padding: 100px 30px;
+    }
+  }
+  
+  .section--hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section--narrow {
+    max-width: 976px;
+    padding: 100px 15px;
+  }
+  
+  .section--alt {
+    background: #222;
+  }
