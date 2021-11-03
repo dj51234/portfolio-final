@@ -114,7 +114,7 @@ const portfolioContent = {
         const link = portfolioContent[contentNum].link;
   
         that.$workImage.css({
-          'background': `url("../dest/images/content_img_${contentNum}.jpg")`,
+          'background': `url("dest/images/content_img_${contentNum}.jpg")`,
           'background-size': 'cover',
           'background-position': 'center center'
         });
