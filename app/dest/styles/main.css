@@ -6,6 +6,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  background: #0C0F0A;
+  color: #FFFFFF;
 }
 
 a {
@@ -474,11 +476,11 @@ template {
 }
 
 .section--padding {
-  padding: 75px 30px;
+  padding: 75px 70px;
 }
 @media (min-width: 1200px) {
   .section--padding {
-    padding: 100px 30px;
+    padding: 100px 70px;
   }
 }
 
@@ -503,12 +505,12 @@ template {
 @media (min-width: 900px) {
   .header {
     width: 150px;
-    background: white;
+    background: #0C0F0A;
     height: 100vh;
     overflow: hidden;
     position: fixed;
     display: block;
-    border-right: 1px solid rgba(17, 17, 17, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
 .header__logo {
@@ -516,11 +518,19 @@ template {
   width: 60px;
   margin: 0 auto;
   border-radius: 50%;
-  border: 3px solid #333;
+  border: 3px solid #41EAD4;
   position: absolute;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.header__logo:hover {
+  border-color: #FF206E;
+}
+.header__logo:hover .header__logo-text {
+  color: #FF206E;
 }
 .header__logo-text {
   position: absolute;
@@ -528,7 +538,8 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #333;
+  color: #41EAD4;
+  transition: 0.2s;
 }
 .header__nav {
   margin: 0 20px 0 0;
@@ -539,36 +550,38 @@ template {
   margin: 10px 0;
 }
 .header__nav-link {
-  border-bottom: 1px dotted #333;
+  border-bottom: 1px dotted #41EAD4;
   display: inline-block;
   position: relative;
-  color: #191919;
+  color: #FFFFFF;
 }
 .header__nav-link::after {
   content: "<";
-  color: #191919;
+  color: #FF206E;
   position: absolute;
   right: -50px;
   pointer-events: none;
   transition: all 0.2s ease-in-out;
 }
+.header__nav-link:hover {
+  border-bottom-color: #FF206E;
+}
 .header__nav-link:hover::after {
   right: -20px;
 }
 .header__nav-link--email {
-  border: 1px solid #111;
+  border: 1px solid #0C0F0A;
   margin-top: 0px;
   border-radius: 3px;
-  padding: 5px 10px;
-  background: #333;
-  color: #fff;
+  padding: 5px 15px;
+  background: #41EAD4;
+  color: #0C0F0A;
 }
 .header__nav-link--email::after {
-  color: #111;
+  color: #FF206E;
 }
 .header__nav-link--email:hover {
-  color: #111;
-  background: white;
+  background: #FF206E;
 }
 
 .nav-wrapper {
@@ -631,9 +644,9 @@ template {
   padding: 5px 0;
   position: fixed;
   width: 100%;
-  background: #fff;
+  background: #0C0F0A;
   z-index: 2;
-  border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+  border-bottom: 1px solid rgba(65, 234, 212, 0.2);
 }
 @media (min-width: 900px) {
   .mobile-header {
@@ -642,7 +655,7 @@ template {
 }
 .mobile-header__links {
   position: absolute;
-  background: #fff;
+  background: #0C0F0A;
   width: 100%;
   text-align: center;
   transition: all 0.5s ease-out;
@@ -657,23 +670,26 @@ template {
   width: 100%;
 }
 .mobile-header__links li:first-of-type {
-  border-top: 1px solid rgba(51, 51, 51, 0.1);
+  border-top: 1px solid rgba(65, 234, 212, 0.1);
+}
+.mobile-header__links li:last-of-type {
+  border-bottom: 1px solid rgba(65, 234, 212, 0.1);
 }
 .mobile-header__links a {
   width: 100%;
   display: inline-block;
   padding: 20px 0;
-  color: #333;
+  color: #FFFFFF;
 }
 .mobile-header__links a:hover {
-  background: #333;
-  color: #fff;
+  background: #41EAD4;
+  color: #0C0F0A;
 }
 .mobile-header__logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 3px solid #333;
+  border: 3px solid #41EAD4;
   position: relative;
   z-index: 2;
 }
@@ -689,7 +705,7 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #333;
+  color: #41EAD4;
   font-size: 1rem;
 }
 .mobile-header__menu-icon {
@@ -704,7 +720,7 @@ template {
 }
 .mobile-header__menu-icon span {
   width: 100%;
-  background: #333;
+  background: #41EAD4;
   height: 3px;
   display: inline-block;
   transition: all 0.2s ease-out;
@@ -726,10 +742,17 @@ template {
 }
 
 #hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bg.jpg") bottom center;
+  background: #0C0F0A;
   background-size: cover;
   height: 500px;
   padding-top: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#hero .section__title {
+  color: #41EAD4;
+}
+#hero .section__subtitle {
+  color: #FFFFFF;
 }
 @media (min-width: 900px) {
   #hero {
@@ -772,7 +795,7 @@ template {
   }
 }
 .bio-content__title {
-  color: #111;
+  color: #FFFFFF;
   margin-top: 0;
   font-weight: 300;
 }
@@ -780,15 +803,15 @@ template {
   margin-top: 25px;
 }
 .bio-content__description {
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .bio-outer-text {
-  line-height: 1.5;
+  line-height: 2;
   margin-bottom: 0;
 }
 .bio-outer-text span {
-  border-bottom: 1px dotted #111;
+  border-bottom: 1px dotted #FF206E;
 }
 
 .portfolio-wrap {
@@ -838,7 +861,7 @@ template {
   margin: 0;
   float: left;
   overflow: hidden;
-  border: 3px solid #222;
+  border: 3px solid #FFFFFF;
   margin: 5px;
 }
 @media (min-width: 650px) {
@@ -868,7 +891,7 @@ template {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -878,13 +901,13 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #0C0F0A;
   font-weight: 500;
   font-size: 1.3rem;
 }
 
 .content-container .go-back-btn {
-  color: #222;
+  color: #FF206E;
 }
 @media (min-width: 900px) {
   .content-container .go-back-btn {
@@ -899,7 +922,7 @@ template {
 }
 .content-container .content-image {
   height: 400px;
-  border: 3px solid #222;
+  border: 3px solid #FF206E;
 }
 @media (min-width: 1200px) {
   .content-container .content-image {
@@ -923,16 +946,17 @@ template {
 }
 .content-container .content-text .visit {
   display: inline-block;
-  color: #666;
+  color: #FF206E;
   text-decoration: underline;
   margin-bottom: 10px;
 }
 .content-container .content-text .visit:hover {
-  color: #111;
+  color: #41EAD4;
 }
 .content-container .content-text h1 {
   margin: 0;
   font-weight: 500;
+  color: #41EAD4;
 }
 .content-container .content-text abbr {
   font-size: 2rem;
@@ -1007,31 +1031,39 @@ a[data-content="6"] {
 }
 
 #email {
-  background: #191919;
+  background: #0C0F0A;
   text-align: center;
   padding: 25px 0;
+  transition: 0.2s;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+}
+#email:hover {
+  background: #FFFFFF;
+}
+#email:hover a {
+  color: #0C0F0A;
 }
 #email h1 {
   margin: 0;
+  height: 100%;
 }
 #email a {
-  color: #fff;
+  color: #FFFFFF;
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 1px;
   opacity: 1;
   padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
+  width: 100%;
+  height: 100%;
 }
 @media (min-width: 650px) {
   #email a {
     font-size: 2rem;
   }
-}
-#email a:hover {
-  opacity: 0.9;
-  border-bottom: 2px solid #fff;
 }
 
 .boxes {
@@ -1040,15 +1072,15 @@ a[data-content="6"] {
   flex-wrap: wrap;
 }
 .boxes__link {
-  border-right: 1px solid rgba(17, 17, 17, 0.2);
-  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   height: 125px;
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: #111;
+  color: #FFFFFF;
 }
 .boxes__link--orange {
   border-top: 3px solid #F16529;
@@ -1095,13 +1127,16 @@ a[data-content="6"] {
 }
 .boxes__link .center {
   transform: scale(1);
-  transition: all 0.3s ease-in-out;
 }
 .boxes__link:hover {
-  background: #eeeeee;
+  background: #FFFFFF;
+  color: #0C0F0A;
+}
+.boxes__link:nth-child(3):hover .ion-social-codepen {
+  color: #0C0F0A;
 }
 .boxes--alt .boxes__link {
-  color: #fff;
+  color: #0C0F0A;
   font-size: 3rem;
   pointer-events: none;
   width: 33.33%;
@@ -1117,8 +1152,8 @@ a[data-content="6"] {
 }
 
 footer {
-  background: #fff;
-  color: #111;
+  background: #0C0F0A;
+  color: #FFFFFF;
   padding: 20px 0;
 }
 footer p {
@@ -1160,7 +1195,8 @@ footer p {
   color: #0083BE;
 }
 .ion-social-codepen {
-  color: #333;
+  color: #FFFFFF;
+  transition: 0.2s;
 }
 .ion-social-github {
   color: #F05033;

@@ -38,7 +38,7 @@
       margin: 0;
       float: left;
       overflow: hidden;
-      border: 3px solid #222;
+      border: 3px solid $white;
       margin: 5px;
   
       @include small {
@@ -67,7 +67,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0,0,0,0.7);
+      background: transparentize($white, .1);
       opacity: 0;
       transition: opacity .3s ease-in-out;
   
@@ -77,7 +77,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        color: white;
+        color: $black;
         font-weight: 500;
         font-size: 1.3rem;
       }
@@ -87,7 +87,7 @@
   .content-container {
   
     .go-back-btn {
-      color: #222;
+      color: $orange;
   
       @include medium {
         display: block;
@@ -104,7 +104,7 @@
   
     .content-image {
       height: 400px;
-      border: 3px solid #222;
+      border: 3px solid $orange;
   
       @include large {
         float: left;
@@ -127,18 +127,19 @@
   
       .visit {
         display: inline-block;
-        color: #666;
+        color: $orange;
         text-decoration: underline;
         margin-bottom: 10px;
   
         &:hover {
-          color: #111;
+          color: $blue;
         }
       }
   
       h1 {
         margin: 0;
         font-weight: 500;
+        color: $blue;
       }
   
       abbr {

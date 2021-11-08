@@ -39,7 +39,8 @@
     }
   
     &-social-codepen {
-      color: #333;
+      color: $white;
+      transition: .2s;
     }
   
     &-social-github {

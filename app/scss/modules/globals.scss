@@ -1,3 +1,21 @@
+$black: #0C0F0A;
+$orange: #FF206E;
+$yellow: #d1d646;
+$white: #FFFFFF;
+$blue: #41EAD4;
+
+// $black: #212738;
+// $orange: #f97068;
+// $yellow: #d1d646;
+// $white: #edf2ef;
+// $blue: #57c4e5;
+
+// $black: #191923;
+// $orange: #BF1363;
+// $yellow: #d1d646;
+// $white: #FBFEF9;
+// $blue: #0E79B2;
+
 * {
     box-sizing: border-box;
   }
@@ -6,6 +24,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    background: $black;
+    color: $white;
   }
   
   a {
@@ -14,3 +34,4 @@
     letter-spacing: .5px;
     transition: all .2s ease-in-out;
   }
+

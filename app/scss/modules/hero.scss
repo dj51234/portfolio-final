@@ -1,8 +1,17 @@
 #hero {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/hero-bg.jpg') bottom center;
+    background: $black;
     background-size: cover;
     height: 500px;
     padding-top: 100px;
+    border-bottom: 1px solid transparentize($white,.8);
+
+    .section__title {
+      color: $blue;
+    }
+
+    .section__subtitle {
+      color: $white;
+    }
   
     @include medium {
       height: 800px;

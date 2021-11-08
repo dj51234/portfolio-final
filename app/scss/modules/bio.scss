@@ -34,7 +34,7 @@
     }
   
     &__title {
-      color: #111;
+      color: $white;
       margin-top: 0;
       font-weight: 300;
   
@@ -44,14 +44,14 @@
     }
   
     &__description {
-      line-height: 1.5;
+      line-height: 2;
     }
   }
   
   .bio-outer-text {
-    line-height: 1.5;
+    line-height: 2;
     margin-bottom: 0;
     span {
-      border-bottom: 1px dotted #111;
+      border-bottom: 1px dotted $orange;
     }
   }

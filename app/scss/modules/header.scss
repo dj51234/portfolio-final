@@ -2,12 +2,12 @@
     display: none;
     @include medium {
       width: 150px;
-      background: white;
+      background: $black;
       height: 100vh;
       overflow: hidden;
       position: fixed;
       display: block;
-      border-right: 1px solid transparentize(#111,.7);
+      border-right: 1px solid transparentize($white,.7);
     }
     // text-align: right;
   
@@ -16,11 +16,21 @@
       width: 60px;
       margin: 0 auto;
       border-radius: 50%;
-      border: 3px solid #333;
+      border: 3px solid $blue;
       position: absolute;
       top: 20px;
       left: 50%;
       transform: translateX(-50%);
+      cursor: pointer;
+      transition: .2s;
+
+      &:hover {
+        border-color: $orange;
+        
+        .header__logo-text {
+          color: $orange;
+        }
+      }
     }
   
     &__logo-text {
@@ -29,7 +39,8 @@
       left: 50%;
       transform: translate(-50%,-50%);
       margin: 0;
-      color: #333;
+      color: $blue;
+      transition: .2s;
     }
   
     &__nav {
@@ -43,14 +54,14 @@
     }
   
     &__nav-link {
-      border-bottom: 1px dotted #333;
+      border-bottom: 1px dotted $blue;
       display: inline-block;
       position: relative;
-      color: #191919;
+      color: $white;
   
       &::after {
         content: "<";
-        color: #191919;
+        color: $orange;
         position: absolute;
         right: -50px;
         pointer-events: none;
@@ -58,7 +69,7 @@
       }
   
       &:hover {
-  
+        border-bottom-color: $orange;
         &::after {
           right: -20px;
         }
@@ -66,20 +77,19 @@
     }
   
     &__nav-link--email {
-      border: 1px solid #111;
+      border: 1px solid $black;
       margin-top: 0px;
       border-radius: 3px;
-      padding: 5px 10px;
-      background: #333;
-      color: #fff;
+      padding: 5px 15px;
+      background: $blue;
+      color: $black;
   
       &::after {
-        color: #111;
+        color: $orange;
       }
   
       &:hover {
-        color: #111;
-        background: white;
+        background: $orange;
       }
     }
   }
