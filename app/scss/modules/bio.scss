@@ -37,7 +37,10 @@
       color: $white;
       margin-top: 0;
       font-weight: 300;
-  
+      display:inline-block;
+      border-bottom: 2px solid $blue;
+      padding-bottom: 5px;
+
       &--margin {
         margin-top: 25px;
       }
@@ -51,7 +54,8 @@
   .bio-outer-text {
     line-height: 2;
     margin-bottom: 0;
+    
     span {
-      border-bottom: 1px dotted $orange;
+      color: $orange;
     }
   }

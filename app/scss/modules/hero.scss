@@ -12,6 +12,27 @@
     .section__subtitle {
       color: $white;
     }
+
+    .section__definition {
+      h3 {
+        color: $blue;
+      }
+
+      p {
+        color: $orange;
+      }
+
+      p:last-child {
+        color: $white;
+      }
+
+      span {
+        color: $blue;
+      }
+      span.dot {
+        color: $orange;
+      }
+    }
   
     @include medium {
       height: 800px;

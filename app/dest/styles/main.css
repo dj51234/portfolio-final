@@ -527,10 +527,10 @@ template {
   transition: 0.2s;
 }
 .header__logo:hover {
-  border-color: #FF206E;
+  border-color: #FF208E;
 }
 .header__logo:hover .header__logo-text {
-  color: #FF206E;
+  color: #FF208E;
 }
 .header__logo-text {
   position: absolute;
@@ -557,14 +557,14 @@ template {
 }
 .header__nav-link::after {
   content: "<";
-  color: #FF206E;
+  color: #FF208E;
   position: absolute;
   right: -50px;
   pointer-events: none;
   transition: all 0.2s ease-in-out;
 }
 .header__nav-link:hover {
-  border-bottom-color: #FF206E;
+  border-bottom-color: #FF208E;
 }
 .header__nav-link:hover::after {
   right: -20px;
@@ -578,10 +578,10 @@ template {
   color: #222222;
 }
 .header__nav-link--email::after {
-  color: #FF206E;
+  color: #FF208E;
 }
 .header__nav-link--email:hover {
-  background: #FF206E;
+  background: #FF208E;
 }
 
 .nav-wrapper {
@@ -754,6 +754,21 @@ template {
 #hero .section__subtitle {
   color: #FFFFFF;
 }
+#hero .section__definition h3 {
+  color: #41EAD4;
+}
+#hero .section__definition p {
+  color: #FF208E;
+}
+#hero .section__definition p:last-child {
+  color: #FFFFFF;
+}
+#hero .section__definition span {
+  color: #41EAD4;
+}
+#hero .section__definition span.dot {
+  color: #FF208E;
+}
 @media (min-width: 900px) {
   #hero {
     height: 800px;
@@ -798,6 +813,9 @@ template {
   color: #FFFFFF;
   margin-top: 0;
   font-weight: 300;
+  display: inline-block;
+  border-bottom: 2px solid #41EAD4;
+  padding-bottom: 5px;
 }
 .bio-content__title--margin {
   margin-top: 25px;
@@ -811,7 +829,7 @@ template {
   margin-bottom: 0;
 }
 .bio-outer-text span {
-  border-bottom: 1px dotted #FF206E;
+  color: #FF208E;
 }
 
 .portfolio-wrap {
@@ -907,7 +925,7 @@ template {
 }
 
 .content-container .go-back-btn {
-  color: #FF206E;
+  color: #FF208E;
 }
 @media (min-width: 900px) {
   .content-container .go-back-btn {
@@ -922,7 +940,7 @@ template {
 }
 .content-container .content-image {
   height: 400px;
-  border: 3px solid #FF206E;
+  border: 3px solid #FF208E;
 }
 @media (min-width: 1200px) {
   .content-container .content-image {
@@ -946,7 +964,7 @@ template {
 }
 .content-container .content-text .visit {
   display: inline-block;
-  color: #FF206E;
+  color: #FF208E;
   text-decoration: underline;
   margin-bottom: 10px;
 }
