@@ -4,7 +4,9 @@
     height: 500px;
     padding-top: 100px;
     border-bottom: 1px solid transparentize($white,.8);
-
+    .section__heading {
+      padding: 20px;
+    }
     .section__title {
       color: $blue;
     }

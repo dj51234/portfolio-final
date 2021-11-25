@@ -476,7 +476,7 @@ template {
 }
 
 .section--padding {
-  padding: 75px 70px;
+  padding: 25px 20px;
 }
 @media (min-width: 1200px) {
   .section--padding {
@@ -747,6 +747,9 @@ template {
   height: 500px;
   padding-top: 100px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#hero .section__heading {
+  padding: 20px;
 }
 #hero .section__title {
   color: #41EAFC;
