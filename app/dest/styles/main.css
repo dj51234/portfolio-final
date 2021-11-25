@@ -518,7 +518,7 @@ template {
   width: 60px;
   margin: 0 auto;
   border-radius: 50%;
-  border: 3px solid #41EAD4;
+  border: 3px solid #41EAFC;
   position: absolute;
   top: 20px;
   left: 50%;
@@ -538,7 +538,7 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #41EAD4;
+  color: #41EAFC;
   transition: 0.2s;
 }
 .header__nav {
@@ -550,7 +550,7 @@ template {
   margin: 10px 0;
 }
 .header__nav-link {
-  border-bottom: 1px dotted #41EAD4;
+  border-bottom: 1px dotted #41EAFC;
   display: inline-block;
   position: relative;
   color: #FFFFFF;
@@ -574,7 +574,7 @@ template {
   margin-top: 0px;
   border-radius: 3px;
   padding: 5px 15px;
-  background: #41EAD4;
+  background: #41EAFC;
   color: #222222;
 }
 .header__nav-link--email::after {
@@ -646,7 +646,7 @@ template {
   width: 100%;
   background: #222222;
   z-index: 2;
-  border-bottom: 1px solid rgba(65, 234, 212, 0.2);
+  border-bottom: 1px solid rgba(65, 234, 252, 0.2);
 }
 @media (min-width: 900px) {
   .mobile-header {
@@ -670,10 +670,10 @@ template {
   width: 100%;
 }
 .mobile-header__links li:first-of-type {
-  border-top: 1px solid rgba(65, 234, 212, 0.1);
+  border-top: 1px solid rgba(65, 234, 252, 0.1);
 }
 .mobile-header__links li:last-of-type {
-  border-bottom: 1px solid rgba(65, 234, 212, 0.1);
+  border-bottom: 1px solid rgba(65, 234, 252, 0.1);
 }
 .mobile-header__links a {
   width: 100%;
@@ -682,14 +682,14 @@ template {
   color: #FFFFFF;
 }
 .mobile-header__links a:hover {
-  background: #41EAD4;
+  background: #41EAFC;
   color: #222222;
 }
 .mobile-header__logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 3px solid #41EAD4;
+  border: 3px solid #41EAFC;
   position: relative;
   z-index: 2;
 }
@@ -705,7 +705,7 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #41EAD4;
+  color: #41EAFC;
   font-size: 1rem;
 }
 .mobile-header__menu-icon {
@@ -720,7 +720,7 @@ template {
 }
 .mobile-header__menu-icon span {
   width: 100%;
-  background: #41EAD4;
+  background: #41EAFC;
   height: 3px;
   display: inline-block;
   transition: all 0.2s ease-out;
@@ -749,13 +749,13 @@ template {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 #hero .section__title {
-  color: #41EAD4;
+  color: #41EAFC;
 }
 #hero .section__subtitle {
   color: #FFFFFF;
 }
 #hero .section__definition h3 {
-  color: #41EAD4;
+  color: #41EAFC;
 }
 #hero .section__definition p {
   color: #FF208E;
@@ -764,7 +764,7 @@ template {
   color: #FFFFFF;
 }
 #hero .section__definition span {
-  color: #41EAD4;
+  color: #41EAFC;
 }
 #hero .section__definition span.dot {
   color: #FF208E;
@@ -814,7 +814,7 @@ template {
   margin-top: 0;
   font-weight: 300;
   display: inline-block;
-  border-bottom: 2px solid #41EAD4;
+  border-bottom: 2px solid #41EAFC;
   padding-bottom: 5px;
 }
 .bio-content__title--margin {
@@ -969,12 +969,12 @@ template {
   margin-bottom: 10px;
 }
 .content-container .content-text .visit:hover {
-  color: #41EAD4;
+  color: #41EAFC;
 }
 .content-container .content-text h1 {
   margin: 0;
   font-weight: 500;
-  color: #41EAD4;
+  color: #41EAFC;
 }
 .content-container .content-text abbr {
   font-size: 2rem;
