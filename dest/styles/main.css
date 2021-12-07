@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
-  background: #222222;
+  background: #111;
   color: #ffffff;
 }
 
@@ -506,7 +506,7 @@ template {
 @media (min-width: 900px) {
   .header {
     width: 150px;
-    background: #222222;
+    background: #111;
     height: 100vh;
     overflow: hidden;
     position: fixed;
@@ -571,12 +571,12 @@ template {
   right: -20px;
 }
 .header__nav-link--email {
-  border: 1px solid #222222;
+  border: 1px solid #111;
   margin-top: 0px;
   border-radius: 3px;
   padding: 5px 15px;
   background: #41eafc;
-  color: #222222;
+  color: #111;
   font-weight: 600;
 }
 .header__nav-link--email::after {
@@ -646,7 +646,7 @@ template {
   padding: 5px 0;
   position: fixed;
   width: 100%;
-  background: #222222;
+  background: #111;
   z-index: 2;
   border-bottom: 1px solid rgba(65, 234, 252, 0.2);
 }
@@ -657,7 +657,7 @@ template {
 }
 .mobile-header__links {
   position: absolute;
-  background: #222222;
+  background: #111;
   width: 100%;
   text-align: center;
   transition: all 0.5s ease-out;
@@ -685,7 +685,7 @@ template {
 }
 .mobile-header__links a:hover {
   background: #41eafc;
-  color: #222222;
+  color: #111;
 }
 .mobile-header__logo {
   width: 40px;
@@ -744,7 +744,7 @@ template {
 }
 
 #hero {
-  background: #222222;
+  background: #111;
   background-size: cover;
   height: 500px;
   padding-top: 100px;
@@ -925,7 +925,7 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #222222;
+  color: #111;
   font-weight: 500;
   font-size: 1.3rem;
 }
@@ -1055,7 +1055,7 @@ a[data-content="6"] {
 }
 
 #email {
-  background: #222222;
+  background: #111;
   text-align: center;
   padding: 25px 0;
   transition: 0.2s;
@@ -1067,7 +1067,7 @@ a[data-content="6"] {
   background: #ffffff;
 }
 #email:hover a {
-  color: #222222;
+  color: #111;
 }
 #email h1 {
   margin: 0;
@@ -1154,13 +1154,13 @@ a[data-content="6"] {
 }
 .boxes__link:hover {
   background: #ffffff;
-  color: #222222;
+  color: #111;
 }
 .boxes__link:nth-child(3):hover .ion-social-codepen {
-  color: #222222;
+  color: #111;
 }
 .boxes--alt .boxes__link {
-  color: #222222;
+  color: #111;
   font-size: 3rem;
   pointer-events: none;
   width: 33.33%;
@@ -1176,7 +1176,7 @@ a[data-content="6"] {
 }
 
 footer {
-  background: #222222;
+  background: #111;
   color: #ffffff;
   padding: 20px 0;
 }
