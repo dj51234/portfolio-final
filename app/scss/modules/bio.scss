@@ -1,61 +1,61 @@
 .bio__tools {
-    display: flex;
-    flex-wrap: wrap;
-  
-    .tool-container {
-      width: calc(10% - 20px);
-      margin: 10px;
-  
-      img {
-        transform: scale(.5);
-      }
-    }
-  
-  }
-  
-  .bio-image-container {
-    flex: 1;
-    .bio-image {
-      background: url('../images/bio-pic.png');
-      background-size: cover;
-      height: 200px;
-      width: 200px;
-      border: 3px solid #333;
-      margin: 0 auto;
-    }
-  }
-  
-  .bio-content {
-    flex: 2;
-  
-    @include medium {
-      margin-top: 0;
-      text-align: left;
-    }
-  
-    &__title {
-      color: $white;
-      margin-top: 0;
-      font-weight: 300;
-      display:inline-block;
-      border-bottom: 2px solid $blue;
-      padding-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
 
-      &--margin {
-        margin-top: 25px;
-      }
-    }
-  
-    &__description {
-      line-height: 2;
+  .tool-container {
+    width: calc(10% - 20px);
+    margin: 10px;
+
+    img {
+      transform: scale(0.5);
     }
   }
-  
-  .bio-outer-text {
+}
+
+.bio-image-container {
+  flex: 1;
+  .bio-image {
+    background: url("../images/bio-pic.png");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border: 3px solid #333;
+    margin: 0 auto;
+  }
+}
+
+.bio-content {
+  flex: 2;
+
+  @include medium {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  &__title {
+    color: $white;
+    margin-top: 0;
+    font-weight: 300;
+    display: inline-block;
+    border-bottom: 2px solid $blue;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+    &--margin {
+      margin-top: 25px;
+    }
+  }
+
+  &__description {
     line-height: 2;
-    margin-bottom: 0;
-    
-    span {
-      color: $orange;
-    }
   }
+}
+
+.bio-outer-text {
+  line-height: 2;
+  margin-bottom: 0;
+
+  span {
+    color: $orange;
+  }
+}

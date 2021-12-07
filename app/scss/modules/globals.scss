@@ -1,8 +1,8 @@
 $black: #222222;
-$orange: #FF208E;
+$orange: #f687d4;
 $yellow: #d1d646;
-$white: #FFFFFF;
-$blue: #41EAFC;
+$white: #ffffff;
+$blue: #41eafc;
 
 // $black: #32322C;
 // $orange: #39A0ED;
@@ -23,21 +23,21 @@ $blue: #41EAFC;
 // $blue: #0E79B2;
 
 * {
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    background: $black;
-    color: $white;
-  }
-  
-  a {
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: .5px;
-    transition: all .2s ease-in-out;
-  }
+  box-sizing: border-box;
+}
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background: $black;
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease-in-out;
+}

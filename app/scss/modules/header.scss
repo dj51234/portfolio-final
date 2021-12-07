@@ -1,95 +1,96 @@
 .header {
-    display: none;
-    @include medium {
-      width: 150px;
-      background: $black;
-      height: 100vh;
-      overflow: hidden;
-      position: fixed;
-      display: block;
-      border-right: 1px solid transparentize($white,.7);
-    }
-    // text-align: right;
-  
-    &__logo {
-      height: 60px;
-      width: 60px;
-      margin: 0 auto;
-      border-radius: 50%;
-      border: 3px solid $blue;
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      cursor: pointer;
-      transition: .2s;
+  display: none;
+  @include medium {
+    width: 150px;
+    background: $black;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    display: block;
+    border-right: 1px solid transparentize($white, 0.7);
+  }
+  // text-align: right;
 
-      &:hover {
-        border-color: $orange;
-        
-        .header__logo-text {
-          color: $orange;
-        }
-      }
-    }
-  
-    &__logo-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      margin: 0;
-      color: $blue;
-      transition: .2s;
-    }
-  
-    &__nav {
-      margin: 0 20px 0 0;
-      padding: 0;
-      list-style: none;
-  
-      li {
-        margin: 10px 0;
-      }
-    }
-  
-    &__nav-link {
-      border-bottom: 1px dotted $blue;
-      display: inline-block;
-      position: relative;
-      color: $white;
-  
-      &::after {
-        content: "<";
+  &__logo {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid $blue;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      border-color: $orange;
+
+      .header__logo-text {
         color: $orange;
-        position: absolute;
-        right: -50px;
-        pointer-events: none;
-        transition: all .2s ease-in-out;
-      }
-  
-      &:hover {
-        border-bottom-color: $orange;
-        &::after {
-          right: -20px;
-        }
-      }
-    }
-  
-    &__nav-link--email {
-      border: 1px solid $black;
-      margin-top: 0px;
-      border-radius: 3px;
-      padding: 5px 15px;
-      background: $blue;
-      color: $black;
-  
-      &::after {
-        color: $orange;
-      }
-  
-      &:hover {
-        background: $orange;
       }
     }
   }
+
+  &__logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: $blue;
+    transition: 0.2s;
+  }
+
+  &__nav {
+    margin: 0 20px 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  &__nav-link {
+    border-bottom: 1px dotted $blue;
+    display: inline-block;
+    position: relative;
+    color: $white;
+
+    &::after {
+      content: "<";
+      color: $orange;
+      position: absolute;
+      right: -50px;
+      pointer-events: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      border-bottom-color: $orange;
+      &::after {
+        right: -20px;
+      }
+    }
+  }
+
+  &__nav-link--email {
+    border: 1px solid $black;
+    margin-top: 0px;
+    border-radius: 3px;
+    padding: 5px 15px;
+    background: $blue;
+    color: $black;
+    font-weight: 600;
+
+    &::after {
+      color: $orange;
+    }
+
+    &:hover {
+      background: $orange;
+    }
+  }
+}
