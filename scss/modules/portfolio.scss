@@ -163,6 +163,6 @@
   a[data-content="#{$i}"] {
     background: url("../images/content_img_#{$i}.jpg") no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: left center;
   }
 }

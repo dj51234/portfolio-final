@@ -77,47 +77,34 @@ class WorkBeltToggle {
 // ie {title: 'Project Title', description: 'Project description', tools: ['tool1','tool2']}
 const portfolioContent = {
   1: {
-    title: "crowdAmerica",
+    title: "Investor Management Services",
     description:
-      "For this project I was tasked with designing a website from scratch with photoshop and implementing it into wordpress using a generic wordpress theme.  The task was to create a visually appealing website while leveraging wordpress to start with the structure, then proceeding to customize everything else with CSS and some elements with HTML.  The client was very adamant about having their site be easily maintained with a CMS, so this was a fun project to be able to learn more about wordpress and the different tools you can use to customize a website.",
-    tools: ["html5", "css3", "wordpress"],
-    link: "http://crowdamerica.org",
+      "For this project I was tasked with designing/rebranding a website using photoshop for design templates and implementing it into wordpress using a generic wordpress theme.  The task was to create a visually appealing website that appeared more modern to generally older individuals who invest in real estate properties. I leveraged the previous website/theme as a foundation for the structure, then proceeded to customize everything else with HTML, CSS and jQuery.  At this company it was important to the CEO that the site be easily maintained with a CMS to allow non-developers to add different components easily over time.  This was a fun project to be able to learn more about Wordpress and the different tools you can use to customize a website.",
+    tools: ["html5", "css3", "wordpress", "javascript"],
+    link: "https://www.investormanagementservices.com/",
   },
   2: {
-    title: "Amex Corporate",
+    title: "AMEX Delta",
     description:
-      "This was one site from American Express that was especially exciting to work on because it was my first project working with their team of developers and working in a structured top/down approach with a full team of Customer Experience, designers and other developers.  I was mainly responsible for building the card selector on the page that injects code into the page depending on what card is selected.  I leveraged tools such as HTML, SASS, PHP and some Javascript to complete the project.",
+      "This project was a small redesign of one of American Express' more recent cards.  They wanted to take a more simple and elegant approach to this design to get straight to the point in terms of what the website was trying to portray.  Nothing too fancy or different from the other American Express sites although I really enjoyed working with the designer on this one and was very eager to get the designer's beautiful design actually running in a browser to see it in action.  We decided to use the multicard navigation when scrolling down the page as well to add a bit more oomph to the overall UX.",
     tools: ["html5", "css3", "sass", "javascript"],
-    link: "https://creditcard.americanexpress.com/corporate-business-extra/",
+    link: "https://card.americanexpress.com/d/delta-reserve-credit-card/",
   },
+
   3: {
-    title: "Clear View Escapes",
+    title: "CloudMe",
     description:
-      'This was a personal project that I recently completed in my down time, as I wanted to focus on taking an Object Oriented approach to many common tasks like mobile nav, smooth scrolling, modal interactions, etc.  Usually I take a more functional approach but I was excited to leverage ES6 and the introduction to "classes" to create functionality that I would normally just code out using a couple functions and jQuery.  I must say it was much more fun creating a modular structure that I could go to and know exactly what was happening.  I plan to pursue more personal projects using this approach to maintain organization in future projects!',
-    tools: ["html5", "css3", "sass", "javascript", "nodejs"],
-    link: "https://dj51234.github.io/travel-site/",
+      "This is an older design I created for CloudMe.  I leveraged a lot of jQuery libraries to accomplish the desired outcomes and overall UI/UX of the website.  This was a good project to go a little more in depth with jQuery and learn some of the quirks and nuances that come with it.",
+    tools: ["html5", "css3", "javascript"],
+    link: "http://dj51234.github.io/CloudMe/",
   },
-  4: {
-    title: "Custom Video Player",
-    description:
-      "This was a project I recently completed on the side as a fun way to build a video player from scratch using only SASS and Javascript to build the functionality.  Thinking of ways to leverage Javascript to complete tasks that are normally done differently helped me understand how powerful Javascript can really be, from coding the progress bar to move depending on the current time of the video, to coding the volume/slow motion functionality was a blast.",
-    tools: ["html5", "css3", "sass", "javascript"],
-    link: "https://dj51234.github.io/Custom-video-player/",
-  },
-  5: {
-    title: "Amex Green",
-    description:
-      "For this website I helped develop the top section which is the multicard navigation and top header.  PHP was leveraged to load each card section and its' info in dynamically and of course Javascript was used for the main functionality of sliding in the card info on button presses.  Also if you scroll down the page a neat multicard navigation sticks to the top of the page and corresponds with the page columns that correspond with that card.  This project was fun because it helped me understand the real importance of communicating with a web designer to help achieve their final vision of what they want their designs to accomplish.",
-    tools: ["html5", "css3", "sass", "javascript"],
-    link: "https://card.americanexpress.com/green/",
-  },
-  6: {
-    title: "Amex Delta",
-    description:
-      "My latest project was a small redesign of one of American Express' more recent cards.  They wanted to take a more simple and elegant approach to this design to get straight to the point in terms of what the website was trying to portray.  Nothing too fancy or different from the other American Express sites although I really enjoyed working with the designer on this one and was very eager to get the designer's beautiful design actually running in a browser to see it in action.  We decided to use the multicard navigation again when scrolling down the page as well to add a bit of oomph to the overall UX.",
-    tools: ["html5", "css3", "sass", "javascript"],
-    link: "https://creditcard.americanexpress.com/delta/",
-  },
+  // 6: {
+  //   title: "Amex Delta",
+  //   description:
+  //     "My latest project was a small redesign of one of American Express' more recent cards.  They wanted to take a more simple and elegant approach to this design to get straight to the point in terms of what the website was trying to portray.  Nothing too fancy or different from the other American Express sites although I really enjoyed working with the designer on this one and was very eager to get the designer's beautiful design actually running in a browser to see it in action.  We decided to use the multicard navigation when scrolling down the page as well to add a bit more oomph to the overall UX.",
+  //   tools: ["html5", "css3", "sass", "javascript"],
+  //   link: "https://creditcard.americanexpress.com/delta/",
+  // },
 };
 
 class WorkContent {

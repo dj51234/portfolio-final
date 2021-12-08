@@ -4,6 +4,9 @@
     height: 500px;
     padding-top: 100px;
     border-bottom: 1px solid transparentize($white,.8);
+    font-size: .9rem;
+    
+
     .section__heading {
       padding: 20px;
     }
@@ -22,6 +25,7 @@
 
       p {
         color: $orange;
+        line-height: 1rem;
       }
 
       p:last-child {
@@ -39,5 +43,13 @@
     @include medium {
       height: 800px;
       padding-top: 0;
+    }
+
+    @include x-small {
+      font-size: 1rem;
+
+      .section__definition p {
+        line-height: 1.3rem;
+      }
     }
   }

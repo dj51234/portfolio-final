@@ -749,6 +749,7 @@ template {
   height: 500px;
   padding-top: 100px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
 }
 #hero .section__heading {
   padding: 20px;
@@ -764,6 +765,7 @@ template {
 }
 #hero .section__definition p {
   color: #f687d4;
+  line-height: 1rem;
 }
 #hero .section__definition p:last-child {
   color: #ffffff;
@@ -778,6 +780,14 @@ template {
   #hero {
     height: 800px;
     padding-top: 0;
+  }
+}
+@media (min-width: 500px) {
+  #hero {
+    font-size: 1rem;
+  }
+  #hero .section__definition p {
+    line-height: 1.3rem;
   }
 }
 
@@ -1001,37 +1011,37 @@ template {
 a[data-content="1"] {
   background: url("../images/content_img_1.jpg") no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: left center;
 }
 
 a[data-content="2"] {
   background: url("../images/content_img_2.jpg") no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: left center;
 }
 
 a[data-content="3"] {
   background: url("../images/content_img_3.jpg") no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: left center;
 }
 
 a[data-content="4"] {
   background: url("../images/content_img_4.jpg") no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: left center;
 }
 
 a[data-content="5"] {
   background: url("../images/content_img_5.jpg") no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: left center;
 }
 
 a[data-content="6"] {
   background: url("../images/content_img_6.jpg") no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: left center;
 }
 
 #toolbar {
