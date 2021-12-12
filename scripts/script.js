@@ -1,3 +1,22 @@
+let nameIndex = 1;
+
+function renderName() {
+  const $title = document.querySelector(".section__title");
+  $title.textContent = "";
+  let myName = "Derrick Johnson";
+
+  if (nameIndex < myName.length) {
+    $title.textContent = myName.slice(0, nameIndex) + "_";
+    nameIndex++;
+  } else if (nameIndex === myName.length) {
+    $title.textContent = myName.slice(0, nameIndex);
+  }
+  if (!nameIndex) {
+    return false;
+  }
+  setTimeout(renderName, 300);
+}
+
 class MobileNavToggle {
   constructor() {
     this.$menuIcon = $(".mobile-header__menu-icon");
@@ -158,3 +177,4 @@ class WorkContent {
 new MobileNavToggle();
 new WorkBeltToggle();
 new WorkContent();
+renderName();
