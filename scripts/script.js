@@ -73,9 +73,6 @@ class WorkBeltToggle {
   }
 }
 
-// To be used to define portfolio items
-// Define name of title, project description and tools used
-// ie {title: 'Project Title', description: 'Project description', tools: ['tool1','tool2']}
 const portfolioContent = {
   1: {
     title: "Investor Management Services",
