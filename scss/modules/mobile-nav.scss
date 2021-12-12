@@ -1,123 +1,121 @@
 .mobile-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    position: fixed;
-    width: 100%;
-    background: $black;
-    z-index: 2;
-    border-bottom: 1px solid transparentize($blue,.8);
-  
-    @include medium {
-      display: none;
-    }
-  
-    &__links {
-      position: absolute;
-      background: $black;
-      width: 100%;
-      text-align: center;
-      transition: all .5s ease-out;
-      top: -450%;
-  
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-  
-      li {
-        width: 100%;
-  
-        &:first-of-type {
-          border-top: 1px solid transparentize($blue,.9);
-        }
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  background: $black;
+  z-index: 2;
+  border-bottom: 1px solid transparentize($red, 0.8);
 
-        &:last-of-type {
-          border-bottom: 1px solid transparentize($blue,.9);  
-        }
-      }
-  
-      a {
-        width: 100%;
-        display: inline-block;
-        padding: 20px 0;
-        color: $white;
-  
-        &:hover {
-          background: $blue;
-          color: $black;
-        }
-      }
-    }
-  
-    &__logo {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: 3px solid $blue;
-      position: relative;
-      z-index: 2;
-  
-      @include medium {
-        height: 60px;
-        width: 60px;
-      }
-    }
-  
-    &__logo-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
+  @include medium {
+    display: none;
+  }
+
+  &__links {
+    position: absolute;
+    background: $black;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    top: -450%;
+
+    ul {
+      list-style: none;
+      padding: 0;
       margin: 0;
-      color: $blue;
-      font-size: 1rem;
-  
-      @include medium {
-  
+    }
+
+    li {
+      width: 100%;
+
+      &:first-of-type {
+        border-top: 1px solid transparentize($blue, 0.9);
+      }
+
+      &:last-of-type {
+        border-bottom: 1px solid transparentize($blue, 0.9);
       }
     }
-  
-    &__menu-icon {
-      width: 25px;
-      height: 20px;
-      position: relative;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      z-index: 2;
-  
-      span {
-        width: 100%;
-        background: $blue;
-        height: 3px;
-        display: inline-block;
-        transition: all .2s ease-out;
+
+    a {
+      width: 100%;
+      display: inline-block;
+      padding: 20px 0;
+      color: $white;
+
+      &:hover {
+        background: $orange;
+        color: $black;
       }
     }
   }
-  
-  .mobile-header--is-expanded {
-    .mobile-header__links {
-      top: 100%;
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid $red;
+    position: relative;
+    z-index: 2;
+
+    @include medium {
+      height: 60px;
+      width: 60px;
     }
-  
-    .mobile-header__menu-icon {
-      span:nth-child(1) {
-        transform: rotate(45deg);
-        transform-origin: top left;
-      }
-  
-      span:nth-child(2) {
-        opacity: 0;
-      }
-  
-      span:nth-child(3) {
-        transform: rotate(-44deg) translateY(-1px);
-        transform-origin: bottom left;
-      }
-    }
-  
   }
+
+  &__logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: $red;
+    font-size: 1rem;
+
+    @include medium {
+    }
+  }
+
+  &__menu-icon {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+
+    span {
+      width: 100%;
+      background: $red;
+      height: 3px;
+      display: inline-block;
+      transition: all 0.2s ease-out;
+    }
+  }
+}
+
+.mobile-header--is-expanded {
+  .mobile-header__links {
+    top: 100%;
+  }
+
+  .mobile-header__menu-icon {
+    span:nth-child(1) {
+      transform: rotate(45deg);
+      transform-origin: top left;
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: rotate(-44deg) translateY(-1px);
+      transform-origin: bottom left;
+    }
+  }
+}

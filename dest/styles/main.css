@@ -7,8 +7,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
-  background: #111;
-  color: #ffffff;
+  background: #252525;
+  color: #f2f2f2;
 }
 
 a {
@@ -506,12 +506,12 @@ template {
 @media (min-width: 900px) {
   .header {
     width: 150px;
-    background: #111;
+    background: #252525;
     height: 100vh;
     overflow: hidden;
     position: fixed;
     display: block;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(242, 242, 242, 0.3);
   }
 }
 .header__logo {
@@ -519,7 +519,7 @@ template {
   width: 60px;
   margin: 0 auto;
   border-radius: 50%;
-  border: 3px solid #41eafc;
+  border: 3px solid #d13b3b;
   position: absolute;
   top: 20px;
   left: 50%;
@@ -528,10 +528,10 @@ template {
   transition: 0.2s;
 }
 .header__logo:hover {
-  border-color: #f687d4;
+  border-color: #bf6f6f;
 }
 .header__logo:hover .header__logo-text {
-  color: #f687d4;
+  color: #bf6f6f;
 }
 .header__logo-text {
   position: absolute;
@@ -539,7 +539,7 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #41eafc;
+  color: #d13b3b;
   transition: 0.2s;
 }
 .header__nav {
@@ -551,39 +551,38 @@ template {
   margin: 10px 0;
 }
 .header__nav-link {
-  border-bottom: 1px dotted #41eafc;
+  border-bottom: 1px dotted #bf6f6f;
   display: inline-block;
   position: relative;
-  color: #ffffff;
+  color: #f2f2f2;
 }
 .header__nav-link::after {
   content: "<";
-  color: #f687d4;
+  color: #d13b3b;
   position: absolute;
   right: -50px;
   pointer-events: none;
   transition: all 0.2s ease-in-out;
 }
 .header__nav-link:hover {
-  border-bottom-color: #f687d4;
+  border-bottom-color: #d13b3b;
 }
 .header__nav-link:hover::after {
   right: -20px;
 }
 .header__nav-link--email {
-  border: 1px solid #111;
   margin-top: 0px;
   border-radius: 3px;
   padding: 5px 15px;
-  background: #41eafc;
-  color: #111;
+  background: #bf6f6f;
+  color: #252525;
   font-weight: 600;
 }
 .header__nav-link--email::after {
-  color: #f687d4;
+  color: #d13b3b;
 }
 .header__nav-link--email:hover {
-  background: #f687d4;
+  background: #d13b3b;
 }
 
 .nav-wrapper {
@@ -646,9 +645,9 @@ template {
   padding: 5px 0;
   position: fixed;
   width: 100%;
-  background: #111;
+  background: #252525;
   z-index: 2;
-  border-bottom: 1px solid rgba(65, 234, 252, 0.2);
+  border-bottom: 1px solid rgba(209, 59, 59, 0.2);
 }
 @media (min-width: 900px) {
   .mobile-header {
@@ -657,7 +656,7 @@ template {
 }
 .mobile-header__links {
   position: absolute;
-  background: #111;
+  background: #252525;
   width: 100%;
   text-align: center;
   transition: all 0.5s ease-out;
@@ -681,17 +680,17 @@ template {
   width: 100%;
   display: inline-block;
   padding: 20px 0;
-  color: #ffffff;
+  color: #f2f2f2;
 }
 .mobile-header__links a:hover {
-  background: #41eafc;
-  color: #111;
+  background: #bf6f6f;
+  color: #252525;
 }
 .mobile-header__logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 3px solid #41eafc;
+  border: 3px solid #d13b3b;
   position: relative;
   z-index: 2;
 }
@@ -707,7 +706,7 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #41eafc;
+  color: #d13b3b;
   font-size: 1rem;
 }
 .mobile-header__menu-icon {
@@ -722,7 +721,7 @@ template {
 }
 .mobile-header__menu-icon span {
   width: 100%;
-  background: #41eafc;
+  background: #d13b3b;
   height: 3px;
   display: inline-block;
   transition: all 0.2s ease-out;
@@ -744,37 +743,37 @@ template {
 }
 
 #hero {
-  background: #111;
+  background: #252525;
   background-size: cover;
   height: 500px;
   padding-top: 100px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(242, 242, 242, 0.2);
   font-size: 0.9rem;
 }
 #hero .section__heading {
   padding: 20px;
 }
 #hero .section__title {
-  color: #41eafc;
+  color: #d13b3b;
 }
 #hero .section__subtitle {
-  color: #ffffff;
+  color: #f2f2f2;
 }
 #hero .section__definition h3 {
-  color: #41eafc;
+  color: #f2f2f2;
 }
 #hero .section__definition p {
-  color: #f687d4;
+  color: #bf6f6f;
   line-height: 1rem;
 }
 #hero .section__definition p:last-child {
-  color: #ffffff;
+  color: #f2f2f2;
 }
 #hero .section__definition span {
-  color: #41eafc;
+  color: #bf6f6f;
 }
 #hero .section__definition span.dot {
-  color: #f687d4;
+  color: #d13b3b;
 }
 @media (min-width: 900px) {
   #hero {
@@ -825,11 +824,11 @@ template {
   }
 }
 .bio-content__title {
-  color: #ffffff;
+  color: #f2f2f2;
   margin-top: 0;
   font-weight: 300;
   display: inline-block;
-  border-bottom: 2px solid #41eafc;
+  border-bottom: 2px solid #d13b3b;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
@@ -845,7 +844,7 @@ template {
   margin-bottom: 0;
 }
 .bio-outer-text span {
-  color: #f687d4;
+  color: #bf6f6f;
 }
 
 .portfolio-wrap {
@@ -896,7 +895,7 @@ template {
   margin: 0;
   float: left;
   overflow: hidden;
-  border: 3px solid #ffffff;
+  border: 3px solid #f2f2f2;
   margin: 5px;
 }
 @media (min-width: 650px) {
@@ -926,7 +925,7 @@ template {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(242, 242, 242, 0.9);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -936,13 +935,16 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #111;
+  color: #252525;
   font-weight: 500;
   font-size: 1.3rem;
 }
 
 .content-container .go-back-btn {
-  color: #f687d4;
+  color: #bf6f6f;
+}
+.content-container .go-back-btn:hover {
+  color: #d13b3b;
 }
 @media (min-width: 900px) {
   .content-container .go-back-btn {
@@ -957,7 +959,7 @@ template {
 }
 .content-container .content-image {
   height: 400px;
-  border: 3px solid #ffffff;
+  border: 3px solid #f2f2f2;
 }
 @media (min-width: 1200px) {
   .content-container .content-image {
@@ -981,17 +983,17 @@ template {
 }
 .content-container .content-text .visit {
   display: inline-block;
-  color: #f687d4;
+  color: #bf6f6f;
   text-decoration: underline;
   margin-bottom: 10px;
 }
 .content-container .content-text .visit:hover {
-  color: #41eafc;
+  color: #d13b3b;
 }
 .content-container .content-text h1 {
   margin: 0;
   font-weight: 500;
-  color: #41eafc;
+  color: #bf6f6f;
 }
 .content-container .content-text abbr {
   font-size: 2rem;
@@ -1066,26 +1068,26 @@ a[data-content="6"] {
 }
 
 #email {
-  background: #111;
+  background: #252525;
   text-align: center;
   padding: 25px 0;
   transition: 0.2s;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(242, 242, 242, 0.3);
+  border-bottom: 1px solid rgba(242, 242, 242, 0.3);
   transition: 0.2s;
 }
 #email:hover {
-  background: #ffffff;
+  background: #f2f2f2;
 }
 #email:hover a {
-  color: #111;
+  color: #252525;
 }
 #email h1 {
   margin: 0;
   height: 100%;
 }
 #email a {
-  color: #ffffff;
+  color: #f2f2f2;
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 300;
@@ -1107,15 +1109,15 @@ a[data-content="6"] {
   flex-wrap: wrap;
 }
 .boxes__link {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(242, 242, 242, 0.2);
+  border-bottom: 1px solid rgba(242, 242, 242, 0.2);
   height: 125px;
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #f2f2f2;
 }
 .boxes__link--orange {
   border-top: 3px solid #F16529;
@@ -1164,14 +1166,14 @@ a[data-content="6"] {
   transform: scale(1);
 }
 .boxes__link:hover {
-  background: #ffffff;
-  color: #111;
+  background: #f2f2f2;
+  color: #252525;
 }
 .boxes__link:nth-child(3):hover .ion-social-codepen {
-  color: #111;
+  color: #252525;
 }
 .boxes--alt .boxes__link {
-  color: #111;
+  color: #252525;
   font-size: 3rem;
   pointer-events: none;
   width: 33.33%;
@@ -1187,8 +1189,8 @@ a[data-content="6"] {
 }
 
 footer {
-  background: #111;
-  color: #ffffff;
+  background: #252525;
+  color: #f2f2f2;
   padding: 20px 0;
 }
 footer p {
@@ -1230,7 +1232,7 @@ footer p {
   color: #0083BE;
 }
 .ion-social-codepen {
-  color: #ffffff;
+  color: #f2f2f2;
   transition: 0.2s;
 }
 .ion-social-github {

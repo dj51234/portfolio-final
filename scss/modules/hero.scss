@@ -1,55 +1,54 @@
 #hero {
-    background: $black;
-    background-size: cover;
-    height: 500px;
-    padding-top: 100px;
-    border-bottom: 1px solid transparentize($white,.8);
-    font-size: .9rem;
-    
+  background: $black;
+  background-size: cover;
+  height: 500px;
+  padding-top: 100px;
+  border-bottom: 1px solid transparentize($white, 0.8);
+  font-size: 0.9rem;
 
-    .section__heading {
-      padding: 20px;
-    }
-    .section__title {
-      color: $blue;
-    }
+  .section__heading {
+    padding: 20px;
+  }
+  .section__title {
+    color: $red;
+  }
 
-    .section__subtitle {
+  .section__subtitle {
+    color: $white;
+  }
+
+  .section__definition {
+    h3 {
       color: $white;
     }
 
-    .section__definition {
-      h3 {
-        color: $blue;
-      }
-
-      p {
-        color: $orange;
-        line-height: 1rem;
-      }
-
-      p:last-child {
-        color: $white;
-      }
-
-      span {
-        color: $blue;
-      }
-      span.dot {
-        color: $orange;
-      }
-    }
-  
-    @include medium {
-      height: 800px;
-      padding-top: 0;
+    p {
+      color: $orange;
+      line-height: 1rem;
     }
 
-    @include x-small {
-      font-size: 1rem;
+    p:last-child {
+      color: $white;
+    }
 
-      .section__definition p {
-        line-height: 1.3rem;
-      }
+    span {
+      color: $orange;
+    }
+    span.dot {
+      color: $red;
     }
   }
+
+  @include medium {
+    height: 800px;
+    padding-top: 0;
+  }
+
+  @include x-small {
+    font-size: 1rem;
+
+    .section__definition p {
+      line-height: 1.3rem;
+    }
+  }
+}

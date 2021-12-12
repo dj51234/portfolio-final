@@ -16,7 +16,7 @@
     width: 60px;
     margin: 0 auto;
     border-radius: 50%;
-    border: 3px solid $blue;
+    border: 3px solid $red;
     position: absolute;
     top: 20px;
     left: 50%;
@@ -39,7 +39,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    color: $blue;
+    color: $red;
     transition: 0.2s;
   }
 
@@ -54,14 +54,14 @@
   }
 
   &__nav-link {
-    border-bottom: 1px dotted $blue;
+    border-bottom: 1px dotted $orange;
     display: inline-block;
     position: relative;
     color: $white;
 
     &::after {
       content: "<";
-      color: $orange;
+      color: $red;
       position: absolute;
       right: -50px;
       pointer-events: none;
@@ -69,7 +69,7 @@
     }
 
     &:hover {
-      border-bottom-color: $orange;
+      border-bottom-color: $red;
       &::after {
         right: -20px;
       }
@@ -77,20 +77,19 @@
   }
 
   &__nav-link--email {
-    border: 1px solid $black;
     margin-top: 0px;
     border-radius: 3px;
     padding: 5px 15px;
-    background: $blue;
+    background: $orange;
     color: $black;
     font-weight: 600;
 
     &::after {
-      color: $orange;
+      color: $red;
     }
 
     &:hover {
-      background: $orange;
+      background: $red;
     }
   }
 }
