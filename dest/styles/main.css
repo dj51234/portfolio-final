@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -551,21 +552,21 @@ template {
   margin: 10px 0;
 }
 .header__nav-link {
-  border-bottom: 1px dotted #bf6f6f;
+  border-bottom: 1px dotted #d13b3b;
   display: inline-block;
   position: relative;
   color: #f2f2f2;
 }
 .header__nav-link::after {
   content: "<";
-  color: #d13b3b;
+  color: #bf6f6f;
   position: absolute;
   right: -50px;
   pointer-events: none;
   transition: all 0.2s ease-in-out;
 }
 .header__nav-link:hover {
-  border-bottom-color: #d13b3b;
+  border-bottom-color: #bf6f6f;
 }
 .header__nav-link:hover::after {
   right: -20px;
@@ -574,9 +575,10 @@ template {
   margin-top: 0px;
   border-radius: 3px;
   padding: 5px 15px;
-  background: #bf6f6f;
+  background: #bbbbbb;
   color: #252525;
   font-weight: 600;
+  border-bottom: none;
 }
 .header__nav-link--email::after {
   color: #d13b3b;
@@ -683,7 +685,7 @@ template {
   color: #f2f2f2;
 }
 .mobile-header__links a:hover {
-  background: #bf6f6f;
+  background: #d13b3b;
   color: #252525;
 }
 .mobile-header__logo {
@@ -763,14 +765,14 @@ template {
   color: #f2f2f2;
 }
 #hero .section__definition p {
-  color: #bf6f6f;
+  color: #bbbbbb;
   line-height: 1rem;
 }
 #hero .section__definition p:last-child {
   color: #f2f2f2;
 }
 #hero .section__definition span {
-  color: #bf6f6f;
+  color: #d13b3b;
 }
 #hero .section__definition span.dot {
   color: #d13b3b;
@@ -844,7 +846,10 @@ template {
   margin-bottom: 0;
 }
 .bio-outer-text span {
-  color: #bf6f6f;
+  color: #bbbbbb;
+}
+.bio-outer-text span:hover {
+  color: #d13b3b;
 }
 
 .portfolio-wrap {
@@ -941,10 +946,11 @@ template {
 }
 
 .content-container .go-back-btn {
-  color: #bf6f6f;
+  color: #d13b3b;
+  display: inline-block !important;
 }
 .content-container .go-back-btn:hover {
-  color: #d13b3b;
+  color: #bbbbbb;
 }
 @media (min-width: 900px) {
   .content-container .go-back-btn {
@@ -955,7 +961,7 @@ template {
   display: inline-block;
   margin-left: 8px;
   margin-top: 0px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .content-container .content-image {
   height: 400px;
@@ -983,17 +989,17 @@ template {
 }
 .content-container .content-text .visit {
   display: inline-block;
-  color: #bf6f6f;
+  color: #d13b3b;
   text-decoration: underline;
   margin-bottom: 10px;
 }
 .content-container .content-text .visit:hover {
-  color: #d13b3b;
+  color: #bf6f6f;
 }
 .content-container .content-text h1 {
   margin: 0;
   font-weight: 500;
-  color: #bf6f6f;
+  color: #d13b3b;
 }
 .content-container .content-text abbr {
   font-size: 2rem;

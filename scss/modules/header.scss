@@ -54,14 +54,14 @@
   }
 
   &__nav-link {
-    border-bottom: 1px dotted $orange;
+    border-bottom: 1px dotted $red;
     display: inline-block;
     position: relative;
     color: $white;
 
     &::after {
       content: "<";
-      color: $red;
+      color: $orange;
       position: absolute;
       right: -50px;
       pointer-events: none;
@@ -69,7 +69,7 @@
     }
 
     &:hover {
-      border-bottom-color: $red;
+      border-bottom-color: $orange;
       &::after {
         right: -20px;
       }
@@ -80,9 +80,10 @@
     margin-top: 0px;
     border-radius: 3px;
     padding: 5px 15px;
-    background: $orange;
+    background: $grey;
     color: $black;
     font-weight: 600;
+    border-bottom: none;
 
     &::after {
       color: $red;
