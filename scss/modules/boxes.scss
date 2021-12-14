@@ -1,105 +1,112 @@
 .boxes {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  // border-top: 1px solid transparentize(#222,.8);
+
+  &__link {
+    border-right: 1px solid transparentize($white, 0.8);
+    border-bottom: 1px solid transparentize($white, 0.8);
+    height: 125px;
+    width: 50%;
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    // border-top: 1px solid transparentize(#222,.8);
-  
-    &__link {
-      border-right: 1px solid transparentize($white,.8);
-      border-bottom: 1px solid transparentize($white,.8);
-      height: 125px;
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      color: $white;
-  
-      &--orange {
-        border-top: 3px solid #F16529;
-      }
-  
-      &--blue {
-        border-top: 3px solid #1C88C7;
-      }
-  
-      &--pink {
-        border-top: 3px solid #CD669A;
-      }
-  
-      &--yellow {
-        border-top: 3px solid #F0DB4F;
-      }
-  
-      &--green {
-        border-top: 3px solid #6AA568;
-      }
-  
-      &--burntorange {
-        border-top: 3px solid #F05033;
-      }
-  
-      &--lightblue {
-        border-top: 3px solid #1192C7;
-      }
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: $white;
 
-      &--pyblue {
-        border-top: 3px solid #3774A8;
-      }
+    &--orange {
+      border-top: 3px solid #f16529;
+    }
 
-      &--vuegreen {
-        border-top: 3px solid #3EAF7C;
-        font-size: 1rem !important;
-        
-        * {
-          width: 45px;
-          height: 45px
-        }
-      }
+    &--blue {
+      border-top: 3px solid #1c88c7;
+    }
 
-      
-  
-      @include small {
-        font-size: 2rem;
-      }
-  
-      @include boxes {
-        width: 25%;
-        height: 150px;
-      }
-  
-      .center {
-        transform: scale(1);
-      }
-  
-      &:hover {
-        background: $white;
-        color: $black;
-      }
+    &--pink {
+      border-top: 3px solid #cd669a;
+    }
 
-      &:nth-child(3):hover {
-        .ion-social-codepen {
-          color: $black;
-        }
+    &--yellow {
+      border-top: 3px solid #f0db4f;
+    }
+
+    &--green {
+      border-top: 3px solid #6aa568;
+    }
+
+    &--burntorange {
+      border-top: 3px solid #f05033;
+    }
+
+    &--lightblue {
+      border-top: 3px solid #1192c7;
+    }
+
+    &--pyblue {
+      border-top: 3px solid #3774a8;
+    }
+
+    &--vuegreen {
+      border-top: 3px solid #3eaf7c;
+      font-size: 1rem !important;
+
+      * {
+        width: 45px;
+        height: 45px;
       }
     }
-  
-     &--alt {
-       .boxes__link {
-         color: $black;
-         font-size: 3rem;
-         pointer-events: none;
-         width: 33.33%;
-         height: 100px;
-  
-         @include boxes {
-           width: 16.66%;
-         }
-  
-       }
-  
-       &:hover .center {
-         transform: scale(1);
-       }
-     }
+
+    &--reactblue {
+      border-top: 3px solid #61dafb;
+      font-size: 1rem !important;
+
+      * {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    @include small {
+      font-size: 2rem;
+    }
+
+    @include boxes {
+      width: 25%;
+      height: 150px;
+    }
+
+    .center {
+      transform: scale(1);
+    }
+
+    &:hover {
+      background: $white;
+      color: $black;
+    }
+
+    &:nth-child(3):hover {
+      .ion-social-codepen {
+        color: $black;
+      }
+    }
   }
+
+  &--alt {
+    .boxes__link {
+      color: $black;
+      font-size: 3rem;
+      pointer-events: none;
+      width: 33.33%;
+      height: 100px;
+
+      @include boxes {
+        width: 16.66%;
+      }
+    }
+
+    &:hover .center {
+      transform: scale(1);
+    }
+  }
+}

@@ -1106,34 +1106,42 @@ a[data-content="6"] {
   color: #f2f2f2;
 }
 .boxes__link--orange {
-  border-top: 3px solid #F16529;
+  border-top: 3px solid #f16529;
 }
 .boxes__link--blue {
-  border-top: 3px solid #1C88C7;
+  border-top: 3px solid #1c88c7;
 }
 .boxes__link--pink {
-  border-top: 3px solid #CD669A;
+  border-top: 3px solid #cd669a;
 }
 .boxes__link--yellow {
-  border-top: 3px solid #F0DB4F;
+  border-top: 3px solid #f0db4f;
 }
 .boxes__link--green {
-  border-top: 3px solid #6AA568;
+  border-top: 3px solid #6aa568;
 }
 .boxes__link--burntorange {
-  border-top: 3px solid #F05033;
+  border-top: 3px solid #f05033;
 }
 .boxes__link--lightblue {
-  border-top: 3px solid #1192C7;
+  border-top: 3px solid #1192c7;
 }
 .boxes__link--pyblue {
-  border-top: 3px solid #3774A8;
+  border-top: 3px solid #3774a8;
 }
 .boxes__link--vuegreen {
-  border-top: 3px solid #3EAF7C;
+  border-top: 3px solid #3eaf7c;
   font-size: 1rem !important;
 }
 .boxes__link--vuegreen * {
+  width: 45px;
+  height: 45px;
+}
+.boxes__link--reactblue {
+  border-top: 3px solid #61dafb;
+  font-size: 1rem !important;
+}
+.boxes__link--reactblue * {
   width: 45px;
   height: 45px;
 }
@@ -1191,42 +1199,45 @@ footer p {
   z-index: 1;
 }
 .ion-social-html5 {
-  color: #F16529;
+  color: #f16529;
 }
 .ion-social-css3 {
-  color: #1C88C7;
+  color: #1c88c7;
 }
 .ion-social-sass {
-  color: #CD669A;
+  color: #cd669a;
 }
 .ion-social-javascript {
-  color: #F0DB4F;
+  color: #f0db4f;
 }
 .ion-social-python {
-  color: #3774A8;
+  color: #3774a8;
 }
 .ion-social-vue {
-  color: #3EAF7C;
+  color: #3eaf7c;
+}
+.ion-social-react {
+  color: #61dafb;
 }
 .ion-social-nodejs {
-  color: #6AA568;
+  color: #6aa568;
 }
 .ion-android-share-alt {
-  color: #F05033;
+  color: #f05033;
 }
 .ion-social-linkedin {
-  color: #0083BE;
+  color: #0083be;
 }
 .ion-social-codepen {
   color: #f2f2f2;
   transition: 0.2s;
 }
 .ion-social-github {
-  color: #F05033;
+  color: #f05033;
 }
 .ion-social-wordpress {
-  color: #1192C7;
+  color: #1192c7;
 }
 .ion-android-list {
-  color: #6441A5;
+  color: #6441a5;
 }
