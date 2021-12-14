@@ -9,38 +9,14 @@
     display: block;
     border-right: 1px solid transparentize($white, 0.7);
   }
-  // text-align: right;
+  text-align: right;
 
   &__logo {
-    height: 60px;
-    width: 60px;
     margin: 0 auto;
-    border-radius: 50%;
-    border: 3px solid $red;
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    cursor: pointer;
-    transition: 0.2s;
-
-    &:hover {
-      border-color: $orange;
-
-      .header__logo-text {
-        color: $orange;
-      }
-    }
-  }
-
-  &__logo-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    color: $red;
-    transition: 0.2s;
   }
 
   &__nav {
