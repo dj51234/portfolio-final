@@ -87,11 +87,11 @@
 
 .content-container {
   .go-back-btn {
-    color: $red;
+    color: $grey;
     display: inline-block !important;
 
     &:hover {
-      color: $grey;
+      color: $red;
     }
 
     @include medium {
@@ -131,19 +131,21 @@
 
     .visit {
       display: inline-block;
-      color: $red;
+      color: $grey;
       text-decoration: underline;
       margin-bottom: 10px;
 
       &:hover {
-        color: $orange;
+        color: $red;
       }
     }
 
     h1 {
       margin: 0;
       font-weight: 500;
-      color: $red;
+      color: $white;
+      border-bottom: 2px solid $red;
+      display: inline-block;
     }
 
     abbr {

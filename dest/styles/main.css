@@ -539,14 +539,14 @@ template {
 }
 .header__nav-link::after {
   content: "<";
-  color: #bf6f6f;
+  color: #da0037;
   position: absolute;
   right: -50px;
   pointer-events: none;
   transition: all 0.2s ease-in-out;
 }
 .header__nav-link:hover {
-  border-bottom-color: #bf6f6f;
+  color: #999;
 }
 .header__nav-link:hover::after {
   right: -20px;
@@ -555,7 +555,7 @@ template {
   margin-top: 0px;
   border-radius: 3px;
   padding: 5px 15px;
-  background: #999;
+  background: #f2f2f2;
   color: #171717;
   font-weight: 600;
   border-bottom: none;
@@ -564,7 +564,8 @@ template {
   color: #da0037;
 }
 .header__nav-link--email:hover {
-  background: #da0037;
+  color: #171717;
+  background: #999;
 }
 
 .nav-wrapper {
@@ -642,7 +643,7 @@ template {
   width: 100%;
   text-align: center;
   transition: all 0.5s ease-out;
-  top: -450%;
+  top: -470%;
 }
 .mobile-header__links ul {
   list-style: none;
@@ -670,16 +671,13 @@ template {
 }
 .mobile-header__logo {
   width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 3px solid #da0037;
   position: relative;
   z-index: 2;
 }
 @media (min-width: 900px) {
   .mobile-header__logo {
-    height: 60px;
-    width: 60px;
+    height: 460px;
+    width: 40px;
   }
 }
 .mobile-header__logo-text {
@@ -926,11 +924,11 @@ template {
 }
 
 .content-container .go-back-btn {
-  color: #da0037;
+  color: #999;
   display: inline-block !important;
 }
 .content-container .go-back-btn:hover {
-  color: #999;
+  color: #da0037;
 }
 @media (min-width: 900px) {
   .content-container .go-back-btn {
@@ -969,17 +967,19 @@ template {
 }
 .content-container .content-text .visit {
   display: inline-block;
-  color: #da0037;
+  color: #999;
   text-decoration: underline;
   margin-bottom: 10px;
 }
 .content-container .content-text .visit:hover {
-  color: #bf6f6f;
+  color: #da0037;
 }
 .content-container .content-text h1 {
   margin: 0;
   font-weight: 500;
-  color: #da0037;
+  color: #f2f2f2;
+  border-bottom: 2px solid #da0037;
+  display: inline-block;
 }
 .content-container .content-text abbr {
   font-size: 2rem;

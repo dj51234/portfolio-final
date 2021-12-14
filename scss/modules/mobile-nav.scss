@@ -18,7 +18,7 @@
     width: 100%;
     text-align: center;
     transition: all 0.5s ease-out;
-    top: -450%;
+    top: -470%;
 
     ul {
       list-style: none;
@@ -53,15 +53,12 @@
 
   &__logo {
     width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 3px solid $red;
     position: relative;
     z-index: 2;
 
     @include medium {
-      height: 60px;
-      width: 60px;
+      height: 460px;
+      width: 40px;
     }
   }
 
