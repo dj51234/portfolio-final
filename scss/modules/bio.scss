@@ -58,8 +58,89 @@
   span {
     color: $grey;
 
-    &:hover {
-      color: $red;
+    &.orange:hover {
+      color: #f16529;
+    }
+
+    &.blue:hover {
+      color: #1c88c7;
+    }
+
+    &.yellow:hover {
+      color: #f0db4f;
+    }
+
+    &.reactblue:hover {
+      color: #61dafb;
+    }
+
+    &.gulpred:hover {
+      color: #d34446;
+    }
+
+    &.nodegreen:hover {
+      color: #659a60;
+    }
+
+    &.gitorange:hover {
+      color: #e84d31;
+    }
+
+    &.pyblue:hover {
+      color: #3774a8;
+    }
+
+    &.djangogreen:hover {
+      color: #187953;
+    }
+
+    &.vuegreen:hover {
+      color: #3fb27f;
     }
   }
 }
+
+// &--orange {
+//   border-top: 3px solid #f16529;
+// }
+
+// &--blue {
+//   border-top: 3px solid #1c88c7;
+// }
+
+// &--pink {
+//   border-top: 3px solid #cd669a;
+// }
+
+// &--yellow {
+//   border-top: 3px solid #f0db4f;
+// }
+
+// &--green {
+//   border-top: 3px solid #6aa568;
+// }
+
+// &--burntorange {
+//   border-top: 3px solid #f05033;
+// }
+
+// &--lightblue {
+//   border-top: 3px solid #1192c7;
+// }
+
+// &--pyblue {
+//   border-top: 3px solid #3774a8;
+// }
+
+// &--vuegreen {
+//   border-top: 3px solid #3eaf7c;
+//   font-size: 1rem !important;
+
+//   * {
+//     width: 45px;
+//     height: 45px;
+//   }
+// }
+
+// &--reactblue {
+//   border-top: 3px solid #61dafb;

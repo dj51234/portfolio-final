@@ -735,6 +735,7 @@ template {
 }
 #hero .section__title {
   color: #da0037;
+  transition: 0.2s;
 }
 #hero .section__subtitle {
   color: #f2f2f2;
@@ -826,8 +827,35 @@ template {
 .bio-outer-text span {
   color: #999;
 }
-.bio-outer-text span:hover {
-  color: #da0037;
+.bio-outer-text span.orange:hover {
+  color: #f16529;
+}
+.bio-outer-text span.blue:hover {
+  color: #1c88c7;
+}
+.bio-outer-text span.yellow:hover {
+  color: #f0db4f;
+}
+.bio-outer-text span.reactblue:hover {
+  color: #61dafb;
+}
+.bio-outer-text span.gulpred:hover {
+  color: #d34446;
+}
+.bio-outer-text span.nodegreen:hover {
+  color: #659a60;
+}
+.bio-outer-text span.gitorange:hover {
+  color: #e84d31;
+}
+.bio-outer-text span.pyblue:hover {
+  color: #3774a8;
+}
+.bio-outer-text span.djangogreen:hover {
+  color: #187953;
+}
+.bio-outer-text span.vuegreen:hover {
+  color: #3fb27f;
 }
 
 .portfolio-wrap {

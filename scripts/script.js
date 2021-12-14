@@ -159,7 +159,7 @@ function renderName() {
   let myName = "Derrick Johnson";
 
   if (nameIndex < myName.length) {
-    $title.textContent = myName.slice(0, nameIndex) + "_";
+    $title.textContent = myName.slice(0, nameIndex) + "|";
     nameIndex++;
   } else if (nameIndex === myName.length) {
     $title.textContent = myName.slice(0, nameIndex);
@@ -167,7 +167,9 @@ function renderName() {
   if (!nameIndex) {
     return false;
   }
-  setTimeout(renderName, 300);
+
+  let randInt = Math.floor(Math.random() * 300) + 150;
+  setTimeout(renderName, randInt);
 }
 
 new MobileNavToggle();
