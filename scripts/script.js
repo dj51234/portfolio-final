@@ -168,7 +168,7 @@ function renderName() {
     return false;
   }
 
-  let randInt = Math.floor(Math.random() * 300) + 150;
+  let randInt = Math.floor(Math.random() * 75) + 75;
   setTimeout(renderName, randInt);
 }
 

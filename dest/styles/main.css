@@ -725,7 +725,7 @@ template {
 #hero {
   background: #171717;
   background-size: cover;
-  height: 500px;
+  min-height: 100vh;
   padding-top: 100px;
   border-bottom: 1px solid rgba(242, 242, 242, 0.2);
   font-size: 0.9rem;
