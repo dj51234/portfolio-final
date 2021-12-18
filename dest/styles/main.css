@@ -736,6 +736,7 @@ template {
 #hero .section__title {
   color: #da0037;
   transition: 0.2s;
+  opacity: 0;
 }
 #hero .section__subtitle {
   color: #f2f2f2;

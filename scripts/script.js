@@ -156,6 +156,7 @@ class WorkContent {
 function renderName() {
   const $title = document.querySelector(".section__title");
   $title.textContent = "";
+  $title.style.opacity = 1;
   let myName = "Derrick Johnson";
 
   if (nameIndex < myName.length) {
