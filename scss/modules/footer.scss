@@ -1,12 +1,13 @@
 footer {
-    background: $black;
-    color: $white;
-    padding: 20px 0;
-  
-    p {
-      margin: 0;
-      font-weight: 300;
-      font-size: .8rem;
-      text-align: center;
-    }
+  background: $black;
+  color: $white;
+  padding: 20px 0;
+  border-top: 1px solid transparentize($white, 0.7);
+
+  p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: center;
   }
+}
