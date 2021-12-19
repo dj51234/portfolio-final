@@ -914,20 +914,18 @@ body {
 
 .portfolio-wrap {
   width: 200%;
-  padding: 75px 0px;
+  height: 100%;
+  padding: 50px 0px;
   position: relative;
   transition: all 0.3s ease-in-out;
   left: 0%;
+  display: flex;
+  align-items: center;
 }
 .portfolio-wrap::after {
   content: "";
   clear: both;
   display: table;
-}
-@media (min-width: 1200px) {
-  .portfolio-wrap {
-    padding: 100px 0px;
-  }
 }
 .portfolio-wrap.is-slided {
   left: -100%;
@@ -938,10 +936,6 @@ body {
   width: 50%;
   float: left;
   padding: 0 25px;
-}
-
-.content-wrap {
-  display: none;
 }
 
 .thumbnail-container {
@@ -1081,37 +1075,37 @@ body {
 a[data-content="1"] {
   background: url("../images/content_img_1.jpg") no-repeat;
   background-size: cover;
-  background-position: left center;
+  background-position: center center;
 }
 
 a[data-content="2"] {
   background: url("../images/content_img_2.jpg") no-repeat;
   background-size: cover;
-  background-position: left center;
+  background-position: center center;
 }
 
 a[data-content="3"] {
   background: url("../images/content_img_3.jpg") no-repeat;
   background-size: cover;
-  background-position: left center;
+  background-position: center center;
 }
 
 a[data-content="4"] {
   background: url("../images/content_img_4.jpg") no-repeat;
   background-size: cover;
-  background-position: left center;
+  background-position: center center;
 }
 
 a[data-content="5"] {
   background: url("../images/content_img_5.jpg") no-repeat;
   background-size: cover;
-  background-position: left center;
+  background-position: center center;
 }
 
 a[data-content="6"] {
   background: url("../images/content_img_6.jpg") no-repeat;
   background-size: cover;
-  background-position: left center;
+  background-position: center center;
 }
 
 #toolbar {

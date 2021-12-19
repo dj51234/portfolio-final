@@ -55,20 +55,12 @@ class WorkBeltToggle {
   }
 
   hideThumbs() {
-    const that = this;
-    setTimeout(function () {
-      that.$thumbWrap.hide(300);
-    }, 0);
-    this.$contentWrap.show(0);
+    this.toggleBelt();
     return false;
   }
 
   showThumbs() {
-    const that = this;
-    setTimeout(function () {
-      that.$contentWrap.hide(300);
-    }, 300);
-    this.$thumbWrap.show(300);
+    this.toggleBelt();
     return false;
   }
 }
@@ -96,13 +88,13 @@ const portfolioContent = {
     tools: ["html5", "css3", "javascript"],
     link: "http://dj51234.github.io/CloudMe/",
   },
-  // 6: {
-  //   title: "Amex Delta",
-  //   description:
-  //     "My latest project was a small redesign of one of American Express' more recent cards.  They wanted to take a more simple and elegant approach to this design to get straight to the point in terms of what the website was trying to portray.  Nothing too fancy or different from the other American Express sites although I really enjoyed working with the designer on this one and was very eager to get the designer's beautiful design actually running in a browser to see it in action.  We decided to use the multicard navigation when scrolling down the page as well to add a bit more oomph to the overall UX.",
-  //   tools: ["html5", "css3", "sass", "javascript"],
-  //   link: "https://creditcard.americanexpress.com/delta/",
-  // },
+  4: {
+    title: "Etch-N-Sketch",
+    description:
+      "My latest project was a small redesign of one of American Express' more recent cards.  They wanted to take a more simple and elegant approach to this design to get straight to the point in terms of what the website was trying to portray.  Nothing too fancy or different from the other American Express sites although I really enjoyed working with the designer on this one and was very eager to get the designer's beautiful design actually running in a browser to see it in action.  We decided to use the multicard navigation when scrolling down the page as well to add a bit more oomph to the overall UX.",
+    tools: ["html5", "css3", "sass", "javascript"],
+    link: "https://creditcard.americanexpress.com/delta/",
+  },
 };
 
 class WorkContent {

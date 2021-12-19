@@ -1,14 +1,13 @@
 .portfolio-wrap {
   width: 200%;
-  padding: 75px 0px;
+  height: 100%;
+  padding: 50px 0px;
   position: relative;
   transition: all 0.3s ease-in-out;
   left: 0%;
+  display: flex;
+  align-items: center;
   @include clearfix;
-
-  @include large {
-    padding: 100px 0px;
-  }
 
   &.is-slided {
     left: -100%;
@@ -20,10 +19,6 @@
   width: 50%;
   float: left;
   padding: 0 25px;
-}
-
-.content-wrap {
-  display: none;
 }
 
 .thumbnail-container {
@@ -170,6 +165,6 @@
   a[data-content="#{$i}"] {
     background: url("../images/content_img_#{$i}.jpg") no-repeat;
     background-size: cover;
-    background-position: left center;
+    background-position: center center;
   }
 }
