@@ -568,6 +568,10 @@ template {
   background: #999;
 }
 
+body {
+  overflow: hidden;
+}
+
 .nav-wrapper {
   margin: 0 auto;
   padding: 20px 10px;
@@ -586,11 +590,32 @@ template {
 }
 
 .body-wrap {
-  min-height: 100vh;
+  height: 100vh;
+  width: 400%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transform: translatex(0%);
+}
+
+.main-wrap {
+  display: flex;
+  width: 100%;
+}
+
+.hero-wrap {
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bio-wrap {
+  width: 25%;
+  display: flex;
+  align-items: center;
 }
 
 .flex-column {
