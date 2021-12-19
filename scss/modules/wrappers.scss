@@ -14,3 +14,11 @@
   max-width: 976px;
   margin: 0 auto;
 }
+
+.body-wrap {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

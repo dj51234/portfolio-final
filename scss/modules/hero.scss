@@ -1,10 +1,9 @@
 #hero {
   background: $black;
   background-size: cover;
-  min-height: 100vh;
   padding-top: 100px;
-  border-bottom: 1px solid transparentize($white, 0.8);
   font-size: 0.9rem;
+  flex: 1;
 
   .section__heading {
     padding: 20px;
@@ -42,7 +41,6 @@
   }
 
   @include medium {
-    height: 800px;
     padding-top: 0;
   }
 

@@ -1,89 +1,124 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Derrick Johnson - Web Developer</title>
     <link rel="stylesheet" href="./dest/styles/main.css" />
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./dest/script/jquery-smooth-scroll.js" ></script>
-</head>
+    <script
+      type="text/javascript"
+      src="./dest/script/jquery-smooth-scroll.js"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- Desktop Header -->
     <header class="header">
-        <div class="nav-wrapper">
-          <div class="flex-column">
-            <div class="header__logo"><img src="./dest/images/dj-logo.png" alt="DJ"></div>
-            <ul class="header__nav">
-              <li><a class="header__nav-link" href="#bio">Bio</a></li>
-              <li><a class="header__nav-link" href="#portfolio">Portfolio</a></li>
-              <li><a target="_blank" class="header__nav-link"href="./dest/images/derrick-johnson-resume.pdf" download>Resume</a></li>
-              <li><a class="header__nav-link" href="#social">Contact</a></li>
-              <li><a class="header__nav-link header__nav-link--email" href="mailto:dj51234@yahoo.com">Email Me</a></li>
-            </ul>
+      <div class="nav-wrapper">
+        <div class="flex-column">
+          <div class="header__logo">
+            <img src="./dest/images/dj-logo.png" alt="DJ" />
           </div>
-        </div>
-      </header>
-    
-      <!-- Mobile Header -->
-      <div class="mobile-header">
-        <div class="mobile-nav-wrapper flex-row">
-          <div class="mobile-header__logo"><img src="./dest/images/dj-logo-mobile.png" alt="DJ"></div>
-          <div class="mobile-header__menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="mobile-header__links">
-          <ul>
-            <li><a class="mobile-header__link" href="#bio">Bio</a></li>
-            <li><a class="mobile-header__link" href="#portfolio">Portfolio</a></li>
-            <li><a target="_blank" class="mobile-header__link" href="./dest/images/derrick-johnson-resume.pdf" download>Resume</a></li>
-            <li><a class="mobile-header__link" href="#social">Contact</a></li>
-            <li><a class="mobile-header__link" href="mailto:dj51234@yahoo.com">Email Me</a></li>
+          <ul class="header__nav">
+            <li><a class="header__nav-link" href="#bio">Bio</a></li>
+            <li><a class="header__nav-link" href="#portfolio">Portfolio</a></li>
+            <li>
+              <a
+                target="_blank"
+                class="header__nav-link"
+                href="./dest/images/derrick-johnson-resume.pdf"
+                download
+                >Resume</a
+              >
+            </li>
+            <li><a class="header__nav-link" href="#social">Contact</a></li>
+            <li>
+              <a
+                class="header__nav-link header__nav-link--email"
+                href="mailto:dj51234@yahoo.com"
+                >Email Me</a
+              >
+            </li>
           </ul>
         </div>
       </div>
-    
+    </header>
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+      <div class="mobile-nav-wrapper flex-row">
+        <div class="mobile-header__logo">
+          <img src="./dest/images/dj-logo-mobile.png" alt="DJ" />
+        </div>
+        <div class="mobile-header__menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobile-header__links">
+        <ul>
+          <li><a class="mobile-header__link" href="#bio">Bio</a></li>
+          <li>
+            <a class="mobile-header__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              class="mobile-header__link"
+              href="./dest/images/derrick-johnson-resume.pdf"
+              download
+              >Resume</a
+            >
+          </li>
+          <li><a class="mobile-header__link" href="#social">Contact</a></li>
+          <li>
+            <a class="mobile-header__link" href="mailto:dj51234@yahoo.com"
+              >Email Me</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="body-wrap">
       <!-- Top Hero Section -->
       <div id="hero" class="section section--hero">
         <div class="section__heading">
           <h1 class="section__title">Derrick Johnson</h1>
           <h2 class="section__subtitle">Front End Developer</h2>
           <div class="section__definition">
-            <h3>der <span class="dot">·</span> rick <span class="dot">·</span> john <span class="dot">·</span> son&nbsp;&nbsp;|&nbsp;&nbsp;/ˈderik ˈjänsən/</h3>
-            <p><i>1. (Noun) a really motivated and passionate Front End Developer; slightly addicted to coding.</i></p>
-          
-          </div>
-         
-        </div>
-      </div>
-    
-      <!-- Bio Section -->
-      <div id="bio" class="section section--padding">
-        <div>
-          <div class="bio-content">
-            <h2 class="bio-content__title">Hey There, I'm Derrick!</h2>
-            <p class="bio-outer-text">I am a <span>Front End Developer</span> currently residing in Jacksonville, NC.  I recently got out of the military where I was an <span>ISSO (Information Systems Security Officer)</span> and <span>Data Systems Administrator</span> performing tasks such as building servers and working in virtual environments, while also acting as one of the lead Help Desk techs for our organization.  I have previous experience as a <span>Creative Developer</span> and <span>Front End Developer</span> at multiple companies.  While working in <span></span>Cyber Security</span> was a rewarding career I have recently dived back into web development and it is clear that my true passion still lies in solving the everyday problems that come with coding and developing user experiences on the web.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bio-content">
-            <h2 class="bio-content__title bio-content__title--margin">Experience</h2>
-            <p class="bio-outer-text">I have 6 years of professional experience working with clients in web development but I started off designing websites in Photoshop over 10 years ago.  I am currently experienced in using modern tools such as <span class="orange">HTML5</span>, <span class="blue">CSS3</span>, <span class="yellow">Javascript</span>, <span class="reactblue">React.js</span>, <span class="gulpred">Gulp</span>, <span class="nodegreen">Node/npm</span>, <span class="gitorange">Git</span>, <span class="pyblue">Python</span> and am currently embarking on my adventure with <span class="djangogreen">Django</span> and <span class="vuegreen">Vue.js</span>.</p>
+            <h3>
+              der <span class="dot">·</span> rick
+              <span class="dot">·</span> john
+              <span class="dot">·</span> son&nbsp;&nbsp;|&nbsp;&nbsp;/ˈderik
+              ˈjänsən/
+            </h3>
+            <p>
+              <i
+                >1. (Noun) a really motivated and passionate Front End
+                Developer; slightly addicted to coding.</i
+              >
+            </p>
           </div>
         </div>
       </div>
-    
       <div id="tools" class="section">
         <div class="boxes boxes--alt">
-          <a href=""class="boxes__link boxes__link--orange">
+          <a href="" class="boxes__link boxes__link--orange">
             <div class="center">
               <span class="ion-social-html5"></span>
             </div>
@@ -110,116 +145,14 @@
           </a>
           <a href="" class="boxes__link boxes__link--reactblue">
             <div class="center">
-              <span class="ion-social-react"><ion-icon name="logo-react"></ion-icon></span>
+              <span class="ion-social-react"
+                ><ion-icon name="logo-react"></ion-icon
+              ></span>
             </div>
           </a>
         </div>
       </div>
-    
-      <!-- Portfolio Section -->
-      <div id="portfolio" class="section section--full-width-sm">
-        <div class="portfolio-wrap"> <!-- 200% -->
-          <div class="thumb-wrap">
-            <div class="thumbnail-container">
-              <a href="#portfolio" data-content="1" class="thumbnail-unit">
-                <div class="thumb-overlay">
-                  <span data-content="1">Title</span>
-                </div>
-              </a>
-              <a href="#portfolio" data-content="2" class="thumbnail-unit">
-                <div class="thumb-overlay">
-                  <span data-content="2">Title</span>
-                </div>
-              </a>
-              <a href="#portfolio" data-content="3" class="thumbnail-unit">
-                <div class="thumb-overlay">
-                  <span data-content="3">Title</span>
-                </div>
-              </a>
-              <!-- <a href="#portfolio" data-content="4" class="thumbnail-unit">
-                <div class="thumb-overlay">
-                  <span data-content="4">Title</span>
-                </div>
-              </a> -->
-              <!-- <a href="#portfolio" data-content="5" class="thumbnail-unit">
-                <div class="thumb-overlay">
-                <span data-content="5">Title</span>
-                </div>
-              </a>
-              <a href="#portfolio" data-content="6" class="thumbnail-unit">
-                <div class="thumb-overlay">
-                  <span data-content="6">Title</span>
-                </div>
-              </a> -->
-            </div> <!-- 50% of parent -->
-          </div>
-          <div class="content-wrap">
-            <div class="content-container">
-              <div>
-                <a class="go-back-btn" href="#">
-                  <span class="ion-chevron-left"></span><h3 class="go-back-title">Go Back</h3>
-                </a>
-              </div>
-              <div class="content-image"></div>
-              <div class="content-text">
-                <h1 class="content-title">Title</h1>
-                <p class="content-description">
-    
-                </p>
-                <a class="visit" href="#">Visit Site</a>
-                <strong>Tools Used:</strong>
-                <span>(Hover over an icon to see full name of tool)</span>
-                <div class="content-tools">
-    
-                </div>
-              </div>
-            </div> <!-- 50% of parent -->
-          </div>
-        </div>
-      </div>
-    
-      <!-- email -->
-      <div id="email" class="section">
-        <h1><a href="mailto:dj51234@yahoo.com">dj51234@yahoo.com</a></h1>
-      </div>
-    
-      <!-- Social Links -->
-    
-      <div id="social" class="section">
-        <div class="boxes">
-          <a target="_blank" href="https://www.linkedin.com/in/derrick-johnson-ab1b887b/" class="boxes__link">
-            <div class="center">
-              <span>LinkedIn</span>
-              <span class="ion-social-linkedin"></span>
-            </div>
-          </a>
-          <a target="_blank" href="https://github.com/dj51234"class="boxes__link">
-            <div class="center">
-              <span>Github</span>
-              <span class="ion-social-github"></span>
-            </div>
-          </a>
-          <a target="_blank" href="http://codepen.io/dj51234/pens/public/" class="boxes__link">
-            <div class="center">
-              <span>Codepen</span>
-              <span class="ion-social-codepen"></span>
-            </div>
-          </a>
-          <a target="_blank" href="./dest/images/derrick-johnson-resume.pdf" class="boxes__link">
-            <div class="center">
-              <span>Resume</span>
-              <span class="ion-android-list"></span>
-            </div>
-          </a>
-        </div>
-      </div>
-    
-      <!-- footer -->
-      <footer class="section">
-        <p>&copy; Derrick Johnson 2022. All rights reserved.</p>
-      </footer>
-      
-    <script type="text/javascript" src="dest/script/script.js" ></script>
-</body>
-
+    </div>
+    <script type="text/javascript" src="dest/script/script.js"></script>
+  </body>
 </html>

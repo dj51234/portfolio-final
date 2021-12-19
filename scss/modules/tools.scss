@@ -1,23 +1,26 @@
 #toolbar {
-    background: #111;
-  
-    .toolbar-container {
-      width: 100%;
-    }
-  
-    .toolbar-img-container {
-      background: #fff;
-      width: calc(20% - 40px);
-      height: 130px;
-      margin: 20px;
-      position: relative;
-    }
-  
-    .toolbar-img {
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%) scale(.8);
-    }
+  background: #111;
+  width: calc(100% - 150px);
+  overflow: hidden;
+  flex-grow: 1;
+
+  .toolbar-container {
+    width: 100%;
   }
+
+  .toolbar-img-container {
+    background: #fff;
+    width: 100%;
+    height: 130px;
+    margin: 20px;
+    position: relative;
+  }
+
+  .toolbar-img {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
