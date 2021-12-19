@@ -45,8 +45,8 @@
       color: $white;
 
       &:hover {
-        background: $red;
-        color: $black;
+        background: transparentize($white, 0.8);
+        color: $white;
       }
     }
   }
@@ -70,9 +70,6 @@
     margin: 0;
     color: $red;
     font-size: 1rem;
-
-    @include medium {
-    }
   }
 
   &__menu-icon {

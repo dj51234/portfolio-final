@@ -701,8 +701,8 @@ body {
   color: #f2f2f2;
 }
 .mobile-header__links a:hover {
-  background: #da0037;
-  color: #171717;
+  background: rgba(242, 242, 242, 0.2);
+  color: #f2f2f2;
 }
 .mobile-header__logo {
   width: 40px;
