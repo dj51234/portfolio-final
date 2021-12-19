@@ -514,6 +514,7 @@ template {
     position: fixed;
     display: block;
     border-right: 1px solid rgba(242, 242, 242, 0.3);
+    z-index: 1000;
   }
 }
 .header__logo {
@@ -569,7 +570,7 @@ template {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .nav-wrapper {
@@ -592,7 +593,7 @@ body {
 .body-wrap {
   height: 100vh;
   width: 400%;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -614,8 +615,9 @@ body {
 
 .bio-wrap {
   width: 25%;
+  padding-top: 100px;
   display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .flex-column {
@@ -803,6 +805,14 @@ body {
   }
 }
 
+.hero-wrap .findme {
+  margin: 0 auto;
+}
+
+.hero-wrap .findme-icon {
+  color: #fff !important;
+}
+
 .bio__tools {
   display: flex;
   flex-wrap: wrap;
@@ -888,6 +898,18 @@ body {
 }
 .bio-outer-text span.vuegreen:hover {
   color: #3fb27f;
+}
+
+.findme {
+  color: #fff;
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.findme-icon:hover {
+  opacity: 0.8;
 }
 
 .portfolio-wrap {
@@ -1303,4 +1325,7 @@ footer p {
 }
 .ion-android-list {
   color: #6441a5;
+}
+.ion-override-color {
+  color: #fff !important;
 }

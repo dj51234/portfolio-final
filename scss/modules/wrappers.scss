@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .nav-wrapper {
@@ -22,7 +22,7 @@ body {
 .body-wrap {
   height: 100vh;
   width: 400%;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,6 +44,7 @@ body {
 
 .bio-wrap {
   width: 25%;
+  padding-top: 100px;
   display: flex;
-  align-items: center;
+  position: relative;
 }

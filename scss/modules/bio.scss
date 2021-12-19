@@ -100,47 +100,14 @@
   }
 }
 
-// &--orange {
-//   border-top: 3px solid #f16529;
-// }
+.findme {
+  color: #fff;
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+  font-size: 2rem;
+}
 
-// &--blue {
-//   border-top: 3px solid #1c88c7;
-// }
-
-// &--pink {
-//   border-top: 3px solid #cd669a;
-// }
-
-// &--yellow {
-//   border-top: 3px solid #f0db4f;
-// }
-
-// &--green {
-//   border-top: 3px solid #6aa568;
-// }
-
-// &--burntorange {
-//   border-top: 3px solid #f05033;
-// }
-
-// &--lightblue {
-//   border-top: 3px solid #1192c7;
-// }
-
-// &--pyblue {
-//   border-top: 3px solid #3774a8;
-// }
-
-// &--vuegreen {
-//   border-top: 3px solid #3eaf7c;
-//   font-size: 1rem !important;
-
-//   * {
-//     width: 45px;
-//     height: 45px;
-//   }
-// }
-
-// &--reactblue {
-//   border-top: 3px solid #61dafb;
+.findme-icon:hover {
+  opacity: 0.8;
+}

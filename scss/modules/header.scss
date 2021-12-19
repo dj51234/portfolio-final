@@ -8,6 +8,7 @@
     position: fixed;
     display: block;
     border-right: 1px solid transparentize($white, 0.7);
+    z-index: 1000;
   }
   text-align: right;
 
