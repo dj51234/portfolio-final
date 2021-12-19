@@ -1,4 +1,5 @@
 let nameIndex = 1;
+
 class MobileNavToggle {
   constructor() {
     this.$menuIcon = $(".mobile-header__menu-icon");
@@ -165,7 +166,24 @@ function renderName() {
   setTimeout(renderName, randInt);
 }
 
+function toggleBio() {
+  const $bioWrap = document.querySelector(".body-wrap");
+  const $bioBtns = document.querySelectorAll(".bio-toggle");
+  $bioBtns.forEach((button) => {
+    button.addEventListener("click", function () {
+      if ($bioWrap.classList.contains("bio-slide")) {
+        document.body.classList.remove("bio-slide");
+        $bioWrap.classList.remove("bio-slide");
+      } else {
+        document.body.classList.add("bio-slide");
+        $bioWrap.classList.add("bio-slide");
+      }
+    });
+  });
+}
+
 new MobileNavToggle();
 new WorkBeltToggle();
 new WorkContent();
 renderName();
+toggleBio();

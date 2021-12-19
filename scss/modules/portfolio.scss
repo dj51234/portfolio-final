@@ -81,26 +81,6 @@
 }
 
 .content-container {
-  .go-back-btn {
-    color: $grey;
-    display: inline-block !important;
-
-    &:hover {
-      color: $red;
-    }
-
-    @include medium {
-      display: block;
-    }
-  }
-
-  .go-back-title {
-    display: inline-block;
-    margin-left: 8px;
-    margin-top: 0px;
-    font-weight: 300;
-  }
-
   .content-image {
     height: 400px;
     border: 3px solid $white;
@@ -167,4 +147,44 @@
     background-size: cover;
     background-position: center center;
   }
+}
+
+.go-back-btn {
+  color: $grey;
+  display: inline-block !important;
+
+  &:hover {
+    color: $red;
+  }
+
+  @include medium {
+    display: block;
+  }
+}
+
+.go-back-title {
+  display: inline-block;
+  margin-left: 8px;
+  margin-top: 0px;
+  font-weight: 300;
+}
+
+.go-back-btn-bio {
+  color: $grey;
+  display: inline-block !important;
+
+  &:hover {
+    color: $red;
+  }
+
+  @include medium {
+    display: block;
+  }
+}
+
+.go-back-title-bio {
+  display: inline-block;
+  margin-left: 8px;
+  margin-top: 0px;
+  font-weight: 300;
 }
