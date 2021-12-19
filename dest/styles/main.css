@@ -595,9 +595,7 @@ body.bio-slide {
 }
 
 .body-wrap {
-  height: 100vh;
-  width: 400%;
-  overflow-x: hidden;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -613,21 +611,15 @@ body.bio-slide {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 100vh;
 }
 
 .hero-wrap {
-  width: 25%;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.bio-wrap {
-  width: 25%;
-  padding-top: 100px;
-  display: flex;
-  position: relative;
 }
 
 .flex-column {
