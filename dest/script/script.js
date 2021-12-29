@@ -74,27 +74,27 @@ const portfolioContent = {
     tools: ["html5", "css3", "wordpress", "javascript"],
     link: "https://www.investormanagementservices.com/",
   },
-  2: {
-    title: "AMEX Delta",
-    description:
-      "This project was a small redesign of one of American Express' more recent cards.  They wanted to take a more simple and elegant approach to this design to get straight to the point in terms of what the website was trying to portray.  Nothing too fancy or different from the other American Express sites although I really enjoyed working with the designer on this one and was very eager to get the designer's beautiful design actually running in a browser to see it in action.  We decided to use the multicard navigation when scrolling down the page as well to add a bit more oomph to the overall UX.",
-    tools: ["html5", "css3", "sass", "javascript"],
-    link: "https://card.americanexpress.com/d/delta-reserve-credit-card/",
-  },
+  // 2: {
+  //   title: "AMEX Delta",
+  //   description:
+  //     "This project was a small redesign of one of American Express' more recent cards.  They wanted to take a more simple and elegant approach to this design to get straight to the point in terms of what the website was trying to portray.  Nothing too fancy or different from the other American Express sites although I really enjoyed working with the designer on this one and was very eager to get the designer's beautiful design actually running in a browser to see it in action.  We decided to use the multicard navigation when scrolling down the page as well to add a bit more oomph to the overall UX.",
+  //   tools: ["html5", "css3", "sass", "javascript"],
+  //   link: "https://card.americanexpress.com/d/delta-reserve-credit-card/",
+  // },
 
-  3: {
-    title: "CloudMe",
-    description:
-      "This is an older design I created for CloudMe.  I leveraged a lot of jQuery libraries to accomplish the desired outcomes and overall UI/UX of the website.  This was a good project to go a little more in depth with jQuery and learn some of the quirks and nuances that come with it.",
-    tools: ["html5", "css3", "javascript"],
-    link: "http://dj51234.github.io/CloudMe/",
-  },
+  // 3: {
+  //   title: "CloudMe",
+  //   description:
+  //     "This is an older design I created for CloudMe.  I leveraged a lot of jQuery libraries to accomplish the desired outcomes and overall UI/UX of the website.  This was a good project to go a little more in depth with jQuery and learn some of the quirks and nuances that come with it.",
+  //   tools: ["html5", "css3", "javascript"],
+  //   link: "http://dj51234.github.io/CloudMe/",
+  // },
   4: {
     title: "Etch-N-Sketch",
     description:
-      "My latest project was a small redesign of one of American Express' more recent cards.  They wanted to take a more simple and elegant approach to this design to get straight to the point in terms of what the website was trying to portray.  Nothing too fancy or different from the other American Express sites although I really enjoyed working with the designer on this one and was very eager to get the designer's beautiful design actually running in a browser to see it in action.  We decided to use the multicard navigation when scrolling down the page as well to add a bit more oomph to the overall UX.",
-    tools: ["html5", "css3", "sass", "javascript"],
-    link: "https://creditcard.americanexpress.com/delta/",
+      "This was a fun side project I developed to become more familiar with HTML cnavas.  There are so many possibilities with canvas, and I've only touched the surface with this small project.  I plan to dive deeper into canvas over time and see how creative I can really get with it!",
+    tools: ["html5", "css3", "javascript"],
+    link: "https://dj51234.github.io/EtchSketch/",
   },
 };
 
