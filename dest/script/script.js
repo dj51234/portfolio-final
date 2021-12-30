@@ -52,6 +52,7 @@ class WorkBeltToggle {
 
   toggleBelt() {
     this.$workContainer.toggleClass("is-slided");
+    this.$contentWrap.toggleClass("is-slided");
     return false;
   }
 

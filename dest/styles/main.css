@@ -450,14 +450,29 @@ template {
   text-transform: uppercase;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
+@media (orientation: landscape) {
+  .section__title {
+    font-size: 2rem;
+  }
+}
 @media (min-width: 650px) {
   .section__title {
     font-size: 4rem;
   }
 }
+@media (min-width: 650px) and (orientation: landscape) {
+  .section__title {
+    font-size: 3rem;
+  }
+}
 @media (min-width: 1200px) {
   .section__title {
     font-size: 5rem;
+  }
+}
+@media (min-width: 1200px) and (orientation: landscape) {
+  .section__title {
+    font-size: 4rem;
   }
 }
 .section__subtitle {
@@ -474,6 +489,11 @@ template {
 @media (min-width: 1200px) {
   .section__subtitle {
     font-size: 3rem;
+  }
+}
+@media (orientation: landscape) {
+  .section__subtitle {
+    font-size: 1.3rem;
   }
 }
 
@@ -611,12 +631,12 @@ body.bio-slide {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hero-wrap {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -762,7 +782,7 @@ body.bio-slide {
 #hero {
   background: #171717;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 50px;
   font-size: 0.9rem;
   flex: 1;
 }
@@ -782,7 +802,12 @@ body.bio-slide {
 }
 #hero .section__definition p {
   color: #999;
-  line-height: 1rem;
+  line-height: 1.8rem;
+}
+@media (orientation: landscape) {
+  #hero .section__definition p {
+    font-size: 0.8rem;
+  }
 }
 #hero .section__definition p:last-child {
   color: #f2f2f2;
@@ -813,6 +838,16 @@ body.bio-slide {
 
 .hero-wrap .findme-icon {
   color: #fff !important;
+}
+@media (orientation: landscape) {
+  .hero-wrap .findme-icon span {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 650px) {
+  .hero-wrap .findme-icon span {
+    font-size: 1.5rem;
+  }
 }
 
 .bio__tools {
@@ -917,7 +952,7 @@ body.bio-slide {
 .portfolio-wrap {
   width: 200%;
   height: 100%;
-  padding: 50px 0px;
+  padding: 100px 0px;
   position: relative;
   transition: all 0.3s ease-in-out;
   left: 0%;
@@ -938,6 +973,16 @@ body.bio-slide {
   width: 50%;
   float: left;
   padding: 0 25px;
+}
+
+.content-wrap {
+  display: none;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.content-wrap.is-slided {
+  display: block;
+  opacity: 1;
 }
 
 .thumbnail-container {
@@ -1189,6 +1234,20 @@ a[data-content="6"] {
 @media (min-width: 650px) {
   #email a {
     font-size: 2rem;
+  }
+}
+
+#tools {
+  display: none;
+}
+@media (orientation: landscape) {
+  #tools {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  #tools {
+    display: block;
   }
 }
 

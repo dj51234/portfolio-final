@@ -1,7 +1,7 @@
 #hero {
   background: $black;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 50px;
   font-size: 0.9rem;
   flex: 1;
 
@@ -25,7 +25,11 @@
 
     p {
       color: $grey;
-      line-height: 1rem;
+      line-height: 1.8rem;
+
+      @include landscape {
+        font-size: 0.8rem;
+      }
     }
 
     p:last-child {
@@ -59,4 +63,16 @@
 
 .hero-wrap .findme-icon {
   color: #fff !important;
+
+  @include landscape {
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include small {
+    span {
+      font-size: 1.5rem;
+    }
+  }
 }

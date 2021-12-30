@@ -16,12 +16,24 @@
     text-transform: uppercase;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
 
+    @include landscape {
+      font-size: 2rem;
+    }
+
     @include small {
       font-size: 4rem;
+
+      @include landscape {
+        font-size: 3rem;
+      }
     }
 
     @include large {
       font-size: 5rem;
+
+      @include landscape {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -37,6 +49,10 @@
 
     @include large {
       font-size: 3rem;
+    }
+
+    @include landscape {
+      font-size: 1.3rem;
     }
   }
 }

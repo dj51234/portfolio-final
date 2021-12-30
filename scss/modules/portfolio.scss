@@ -1,7 +1,7 @@
 .portfolio-wrap {
   width: 200%;
   height: 100%;
-  padding: 50px 0px;
+  padding: 100px 0px;
   position: relative;
   transition: all 0.3s ease-in-out;
   left: 0%;
@@ -19,6 +19,17 @@
   width: 50%;
   float: left;
   padding: 0 25px;
+}
+
+.content-wrap {
+  display: none;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+
+  &.is-slided {
+    display: block;
+    opacity: 1;
+  }
 }
 
 .thumbnail-container {

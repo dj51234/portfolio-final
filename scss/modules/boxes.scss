@@ -1,3 +1,14 @@
+#tools {
+  display: none;
+
+  @include landscape {
+    display: none;
+  }
+  @include medium {
+    display: block;
+  }
+}
+
 .boxes {
   display: flex;
   width: 100%;
